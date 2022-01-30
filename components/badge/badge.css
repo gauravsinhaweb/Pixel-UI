@@ -1,0 +1,31 @@
+.online {
+  background-color: #00ff00;
+}
+.offline {
+  background-color: #ff0000;
+}
+.idle {
+  background-color: #868686;
+}
+.av_badge_lg,
+.av_badge_md,
+.av_badge_sm {
+  position: absolute;
+  /* border-radius: 50%; */
+  border: 6px solid var(--white);
+
+  bottom: 0;
+  right: 0;
+}
+.av_badge_lg {
+  height: 3rem;
+  width: 3rem;
+}
+.av_badge_md {
+  height: 1.3rem;
+  width: 1.3rem;
+}
+.av_badge_sm {
+  height: 0.8rem;
+  width: 0.8rem;
+}

@@ -1,0 +1,102 @@
+@import url(./pixel-design.css);
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import "./core.css";
+
+.container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 28rem 1fr;
+  grid-template-rows: 8.7rem 1fr;
+  grid-template-areas:
+    "nav nav"
+    "aside main";
+  gap: 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+}
+
+nav {
+  background-color: var(--white);
+  grid-area: nav;
+}
+aside {
+  background-color: var(--white);
+  grid-area: aside;
+}
+main {
+  background-color: var(--white);
+  grid-area: main;
+}
+.wrapper_nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+}
+/* .nav_brand {
+  height: 30px;
+  width: 30px;
+} */
+.nav_brand_text {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--text-primary);
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 600 !important;
+}
+.nav_brand_text:hover {
+  color: var(--black);
+}
+.nav_menu li {
+  list-style: none;
+  padding: 2rem;
+  text-transform: capitalize;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+.nav_menu li:hover {
+  color: var(--text-primary);
+  opacity: 0.7;
+}
+.wrapper_aside {
+  font-size: 1.4rem;
+  list-style-type: none;
+  flex-direction: column;
+
+  margin: 1rem;
+  padding: 0;
+}
+.wrapper_aside li {
+  padding: 1.6rem;
+  cursor: pointer;
+  padding-left: 4rem;
+  text-align: left;
+  flex-grow: 1;
+  text-transform: capitalize;
+}
+.wrapper_aside li:hover {
+  color: var(--black);
+  font-weight: 500;
+  transition: all 400ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.aside_head {
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  margin-bottom: -1rem;
+}
+svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 8.7rem 50rem 1fr;
+    grid-template-areas:
+      "nav"
+      "aside"
+      "main";
+  }
+}

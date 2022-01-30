@@ -1,0 +1,33 @@
+.avatar {
+  position: relative;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.av-xl {
+  height: 15rem;
+  width: 15rem;
+}
+.av-lg {
+  height: 10rem;
+  width: 10rem;
+}
+.av-md {
+  height: 8rem;
+  width: 8rem;
+}
+.av-sm {
+  height: 5rem;
+  width: 5rem;
+}
+.av-xs {
+  height: 3rem;
+  width: 3rem;
+}
+.rd {
+  border-radius: 50%;
+}
+.sq {
+  border-radius: 10%;
+}
