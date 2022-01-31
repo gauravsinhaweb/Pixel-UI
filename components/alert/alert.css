@@ -1,0 +1,25 @@
+.alert {
+  border: 0.5px solid;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem;
+  text-transform: capitalize;
+  background-color: #f6f6f6;
+  color: #616161;
+}
+.alert-danger {
+  background-color: #fff5f5;
+  color: #c53030;
+}
+.alert-success {
+  background-color: #edf7ed;
+  color: #3d603f;
+}
+.alert-warning {
+  background-color: #fff4e5;
+  color: #764f17;
+}
+.alert-info {
+  background-color: #e5f6fd;
+  color: #326a83;
+}
