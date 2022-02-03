@@ -1,27 +1,40 @@
-@import url(./pixel-design.css);
+@import url("./pixel-design.css");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 @import "./core.css";
 
 .container {
-  display: grid;
+  /* position: relative; */
+
   min-height: 100vh;
+  max-width: 100%;
+  display: grid;
   grid-template-columns: 28rem 1fr;
-  grid-template-rows: 8.7rem 1fr;
+  grid-template-rows: 8rem 1fr;
   grid-template-areas:
     "nav nav"
     "aside main";
   gap: 2rem;
   background-color: var(--bg-color);
   color: var(--text-primary);
+  /* height: 100vh; */
 }
 
 nav {
   background-color: var(--white);
   grid-area: nav;
+  top: 0;
+  position: sticky;
+  z-index: 999;
+  will-change: transform;
+  transition: transform 800ms cubic-bezier(0.5, 0.41, 0.29, 0.9);
 }
 aside {
   background-color: var(--white);
   grid-area: aside;
+  position: sticky;
+  align-self: start;
+  transition: top 800ms cubic-bezier(0.5, 0.41, 0.29, 0.9);
+  overflow: hidden;
 }
 main {
   background-color: var(--white);
@@ -31,6 +44,27 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 0 5rem;
+  background-color: #303030;
+  color: #eee;
+}
+.nav_icon {
+  transition: all 0.2s ease-in-out;
+  opacity: 0.8;
+}
+a {
+  color: inherit;
+}
+.twitter:hover {
+  color: #5865f2;
+  opacity: 1;
+}
+.github:hover {
+  color: var(--white);
+  opacity: 1;
+}
+.theme:hover {
+  color: #ffff00;
+  opacity: 1;
 }
 /* .nav_brand {
   height: 30px;
@@ -39,12 +73,11 @@ main {
 .nav_brand_text {
   text-transform: uppercase;
   cursor: pointer;
-  color: var(--text-primary);
   font-family: "Shadows Into Light", cursive;
   font-weight: 600 !important;
 }
 .nav_brand_text:hover {
-  color: var(--black);
+  color: var(--white);
 }
 .nav_menu li {
   list-style: none;
@@ -53,10 +86,7 @@ main {
   border-bottom: 1px solid transparent;
   cursor: pointer;
 }
-.nav_menu li:hover {
-  color: var(--text-primary);
-  opacity: 0.7;
-}
+
 .wrapper_aside {
   font-size: 1.4rem;
   list-style-type: none;
@@ -64,6 +94,10 @@ main {
 
   margin: 1rem;
   padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 .wrapper_aside li {
   padding: 1.6rem;
@@ -73,10 +107,16 @@ main {
   flex-grow: 1;
   text-transform: capitalize;
 }
-.wrapper_aside li:hover {
+.component:hover {
+  color: var(--black);
+  background-color: var(--bg-color);
+  font-weight: 500;
+  transition: all 800ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.comp_active {
   color: var(--black);
   font-weight: 500;
-  transition: all 400ms cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 800ms cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .aside_head {
   text-transform: capitalize;
@@ -85,7 +125,7 @@ main {
   margin: 0;
   margin-bottom: -1rem;
 }
-svg {
+.icons svg {
   width: 24px;
   height: 24px;
 }
@@ -98,5 +138,8 @@ svg {
       "nav"
       "aside"
       "main";
+  }
+  aside {
+    position: static;
   }
 }

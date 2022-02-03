@@ -1,25 +1,37 @@
 .alert {
   border: 0.5px solid;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 4px;
-  margin: 1rem;
+  margin: 2rem;
   text-transform: capitalize;
-  background-color: #f6f6f6;
-  color: #616161;
+}
+.alert-primary {
+  background-color: var(--primary-li);
+  color: var(--primary);
+  border-left: 4px solid var(--primary);
+}
+.alert-secondary {
+  background-color: #ebebeb;
+  color: var(--secondary);
+  border-left: 4px solid var(--secondary);
 }
 .alert-danger {
   background-color: #fff5f5;
-  color: #c53030;
+  color: var(--danger);
+  border-left: 4px solid var(--danger);
 }
 .alert-success {
   background-color: #edf7ed;
-  color: #3d603f;
+  color: var(--success);
+  border-left: 4px solid var(--success);
 }
 .alert-warning {
   background-color: #fff4e5;
-  color: #764f17;
+  color: var(--warning);
+  border-left: 4px solid var(--warning);
 }
 .alert-info {
   background-color: #e5f6fd;
-  color: #326a83;
+  color: var(--info);
+  border-left: 4px solid var(--info);
 }

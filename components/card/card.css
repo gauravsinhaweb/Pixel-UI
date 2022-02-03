@@ -1,0 +1,162 @@
+/* basic card  */
+
+.card {
+  background-color: #fff;
+
+  overflow: hidden;
+  object-fit: fill;
+  width: 35rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%),
+    0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+.img {
+  background: url("https://picsum.photos/400/200");
+  height: 19.6rem;
+  width: auto;
+  background-repeat: no-repeat;
+}
+.img-cwt {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: left;
+  text-align: left;
+  margin-bottom: 2.5rem;
+  padding: 0 1rem;
+  color: #fff;
+  filter: grayscale(100%);
+}
+.card-content {
+  padding: 16px;
+  padding-bottom: 0;
+}
+.title {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.sub-title {
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+.content {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  opacity: 0.6;
+  text-align: justify;
+  line-height: 2rem;
+}
+.footer {
+  margin: 1rem 0;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.btn_wrapper {
+  gap: 1rem;
+}
+.icons {
+  width: 14rem;
+  justify-content: space-evenly;
+}
+.icons svg {
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.icons svg:hover {
+  background-color: #e6ecf0;
+}
+
+/* card hr (horizontal) */
+
+.card_hr {
+  background-color: #fff;
+  flex-flow: row wrap;
+  overflow: hidden;
+  margin: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--text-primary);
+  border: 0.5px solid transparent;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%),
+    0 1px 3px 0 rgb(0 0 0 / 12%);
+  width: 100%;
+}
+.card_hr_img {
+  height: 20rem;
+}
+.card_hr_content {
+  max-width: 60%;
+  margin: 1rem;
+}
+.card_hr_content h2,
+p {
+  margin: 1rem 0;
+}
+.btn_wrapper_hr {
+  margin: 2rem;
+  gap: 3rem;
+}
+.dod_price {
+  color: var(--danger);
+}
+.card_hr_desc {
+  text-align: justify;
+}
+/* card pricing  */
+
+.card_pricing {
+  width: 25rem;
+  height: 42.7rem;
+  padding: 4rem;
+
+  box-shadow: 20px 22px 24px rgba(71, 56, 180, 0.468668);
+  text-transform: capitalize;
+}
+.plan {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 10px;
+  font-weight: bolder;
+}
+
+.pack {
+  margin: 2rem 0;
+}
+.line {
+  opacity: 0.3;
+}
+.feature {
+  margin: 1rem 0;
+  padding: 0;
+}
+.feature li {
+  margin: 2.5rem 0;
+}
+
+.card_starter {
+  background-color: var(--white);
+  color: var(--cta);
+  transform: scale(0.9);
+}
+.card_pro {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.card_enterprise {
+  background-color: var(--cta);
+  color: var(--white);
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 768px) {
+  .card_hr {
+    justify-content: center;
+  }
+  .card_hr_desc {
+    width: 30rem;
+  }
+}

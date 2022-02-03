@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./core.css" />
-    <link rel="stylesheet" href="./utils/prism/prism.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../core.css" />
+    <link rel="stylesheet" href="../../utils/prism/prism.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pixel Design / Documentation</title>
   </head>
@@ -15,7 +15,7 @@
       <!-- Navbar  -->
       <nav class="wrapper_nav flex">
         <h1>
-          <a href="./index.html">
+          <a href="../../index.html">
             <span title="pixel-ui" class="h2 nav_brand_text"> PIXEL</span></a
           >
           <!-- <span>
@@ -106,309 +106,22 @@
       <aside>
         <ul class="wrapper_aside flex">
           <li class="h5 aside_head">getting started</li>
-          <li class="component comp_active">usage</li>
+          <li class="component">usage</li>
           <li class="component">installation</li>
 
           <li class="h5 aside_head">components</li>
-          <a href="./components/alert/alert.html"
-            ><li class="component">Alert</li></a
-          >
-          <a href="./components/avatar/avatar.html"
-            ><li class="component">Avatar</li></a
-          >
-          <a href="./components/badge/badge.html"
-            ><li class="component">badge</li></a
-          >
-          <a href="./components/button/button.html"
-            ><li class="component">button</li></a
-          >
-          <a href="./components/card/card.html"
-            ><li class="component">card</li></a
-          >
-          <a href="./components/image/image.html"
-            ><li class="component">image</li></a
-          >
-          <a href="./components/input/input.html"
-            ><li class="component">input</li></a
-          >
+          <a href="../alert/alert.html"><li class="component">Alert</li></a>
+          <a href="../avatar/avatar.html"><li class="component">Avatar</li></a>
+          <a href="../badge/badge.html"><li class="component">badge</li></a>
+          <a href="../button/button.html"><li class="component">button</li></a>
+          <a href="./card.html"><li class="component comp_active">card</li></a>
+          <a href="../image/image.html"><li class="component">image</li></a>
+          <a href="../input/input.html"><li class="component">input</li></a>
         </ul>
       </aside>
 
       <!-- Main  -->
-
       <main>
-        <!-- Alert component  -->
-        <section class="comp_wrapper">
-          <h1 class="comp_head-text">alert</h1>
-          <p class="comp_desc-text p-lg">
-            The alert component has six variants
-            <span class="comp_desc_highlight">alert-primary</span>,
-            <span class="comp_desc_highlight">alert-secondary</span>,
-            <span class="comp_desc_highlight">alert-danger</span>,
-            <span class="comp_desc_highlight">alert-info</span>,
-            <span class="comp_desc_highlight">alert-success</span> and
-            <span class="comp_desc_highlight">alert-warning</span>
-          </p>
-          <h2 class="comp_head-text h3">standard alerts</h2>
-          <div class="wrapper_comp_box p-lg">
-            <div class="alert alert-primary">
-              <strong>primary</strong>: An alert for a message!
-            </div>
-            <div class="alert alert-secondary">
-              <strong>secondary</strong>: An alert for a message!
-            </div>
-            <div class="alert alert-danger">
-              <strong>danger</strong>: An alert for a message!
-            </div>
-            <div class="alert alert-info">
-              <strong>info</strong>: An alert for a message!
-            </div>
-            <div class="alert alert-success">
-              <strong>success</strong>: An alert for a message!
-            </div>
-            <div class="alert alert-warning">
-              <strong>warning</strong>: An alert for a message!
-            </div>
-          </div>
-
-          <!-- code snippet  -->
-          <div class="comp_snippet">
-            <script type="text/plain" class="line-numbers language-markup">
-
-              <!-- Alert  -->
-
-               <div class="alert alert-primary">
-                 <strong>primary</strong>: An alert for a message!
-               </div>
-               <div class="alert alert-secondary">
-                 <strong>secondary</strong>: An alert for a message!
-               </div>
-               <div class="alert alert-danger">
-                 <strong>danger</strong>: An alert for a message!
-               </div>
-            </script>
-          </div>
-        </section>
-
-        <!-- Avatar component  -->
-
-        <section class="comp_wrapper">
-          <h1 class="comp_head-text">avatar</h1>
-          <p class="comp_desc-text p-lg">
-            The avatar component has 5 sizes,
-            <span class="comp_desc_highlight"> avatar-xl</span>,
-            <span class="comp_desc_highlight"> avatar-lg</span>,
-            <span class="comp_desc_highlight">avatar-md</span>,
-            <span class="comp_desc_highlight">avatar-sm</span>,
-            <span class="comp_desc_highlight">avatar-xs</span>, having
-            <span class="comp_desc_highlight">rd</span>,for round avatar,
-            <span class="comp_desc_highlight">sq</span>,for square avatar,
-          </p>
-          <h2 class="comp_head-text h3">standard avatars</h2>
-          <div class="wrapper_comp_box p-lg">
-            <div class="wrapper_av flex">
-              <span class="avatar av-xl">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
-              </span>
-              <span class="avatar av-lg">
-                <img src="../../assets/av.png" alt="avatar" class="sq" />
-              </span>
-              <span class="avatar av-md">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
-              </span>
-              <span class="avatar av-sm">
-                <img src="../../assets/av.png" alt="avatar" />
-              </span>
-              <span class="avatar av-xs">
-                <img src="../../assets/av.png" alt="avatar" />
-              </span>
-            </div>
-          </div>
-          <!-- code snippet  -->
-          <div class="comp_snippet">
-            <script type="text/plain" class="line-numbers language-markup">
-
-              <!-- Avatar -->
-
-              <span class="avatar av-xl">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
-              </span>
-              <span class="avatar av-lg">
-                <img src="../../assets/av.png" alt="avatar" class="sq" />
-              </span>
-              <span class="avatar av-md">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
-              </span>
-            </script>
-          </div>
-        </section>
-
-        <!-- Badge component  -->
-
-        <section class="comp_wrapper">
-          <h1 class="comp_head-text">Badge</h1>
-          <p class="comp_desc-text p-lg">
-            The Badge component has 5 sizes,
-            <span class="comp_desc_highlight"> av_badge_lg</span>,
-            <span class="comp_desc_highlight"> av_badge_md</span>,
-            <span class="comp_desc_highlight">av_badge_sm</span>, having 3
-            states, <span class="comp_desc_highlight">online</span>,
-            <span class="comp_desc_highlight">offline</span>,
-            <span class="comp_desc_highlight">idle</span>,having
-            <span class="comp_desc_highlight">rd</span>,for round badge,
-            <span class="comp_desc_highlight">sq</span>,for square badge,
-          </p>
-          <h2 class="comp_head-text h3">standard badge</h2>
-          <div class="wrapper_comp_box p-lg">
-            <div class="wrapper_av flex">
-              <span class="avatar av-xl">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
-                <div
-                  title="Square online badge"
-                  class="av_badge_lg online rd"
-                ></div>
-              </span>
-              <span class="avatar av-lg">
-                <img src="../../assets/av.png" alt="avatar" class="sq" />
-                <div
-                  title="Square offline badge"
-                  class="av_badge_md offline sq"
-                ></div>
-              </span>
-              <span class="avatar av-md">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
-                <div
-                  title="Square offline badge"
-                  class="av_badge_md idle rd"
-                ></div>
-              </span>
-
-              <span class="avatar av-sm">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  aria-hidden="true"
-                  role="img"
-                  class="iconify iconify--ic bell"
-                  width="32"
-                  height="32"
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 22c1.1 0 2-.9 2-2h-4a2 2 0 0 0 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-                <div
-                  title="Square Idle badge"
-                  class="av_badge_sm bell_badge flex-center"
-                >
-                  6
-                </div>
-              </span>
-            </div>
-          </div>
-
-          <!-- code snippet  -->
-          <div class="comp_snippet">
-            <script type="text/plain" class="line-numbers language-markup">
-
-              <!-- Badge -->
-
-              <span class="avatar av-xl">
-                <img src="..." alt="..." class="rd" />
-                <div
-                   class="av_badge_lg online rd"
-                ></div>
-              </span>
-
-              <span class="avatar av-sm">
-                <icon />
-                <div
-                  class="av_badge_sm bell_badge flex-center"
-                >
-                  6
-                </div>
-              </span>
-            </script>
-          </div>
-        </section>
-
-        <!-- Button component  -->
-
-        <section class="comp_wrapper">
-          <h1 class="comp_head-text">Button</h1>
-          <p class="comp_desc_text p-lg">
-            The Button component i.e.
-            <span class="comp_desc_highlight">btn</span>, comes in two
-            catagories, <i>solid buttons </i>and
-            <i> outlined buttons.</i>
-          </p>
-          <h2 class="comp_head-text h3">solid Buttons</h2>
-          <p class="comp_desc_text p-lg">
-            The Solid button is contained with filled colors inside, has five
-            variants
-
-            <span class="comp_desc_highlight">btn-primary</span>,
-            <span class="comp_desc_highlight">btn-cta</span>,
-            <span class="comp_desc_highlight">btn-danger</span>,
-            <span class="comp_desc_highlight">btn-link</span>,
-            <span class="comp_desc_highlight">btn disabled</span>
-          </p>
-          <div class="wrapper_comp_box p-lg">
-            <div class="wrapper_av flex">
-              <button class="btn btn-primary">primary</button>
-              <button class="btn btn-cta">button</button>
-              <button class="btn btn-danger">danger</button>
-              <button class="btn-link">Link to</button>
-              <button disabled="true" class="btn">disabled</button>
-            </div>
-          </div>
-          <div class="comp_snippet">
-            <script type="text/plain" class="line-numbers language-markup">
-
-              <!-- Button Contained-->
-
-              <button class="btn btn-primary">primary</button>
-              <button class="btn btn-cta">button</button>
-              <button class="btn btn-danger">danger</button>
-              <button class="btn-link">Link to</button>
-            </script>
-          </div>
-          <h2 class="comp_head-text h3">Outlined Buttons</h2>
-          <p class="comp_desc_text p-lg">
-            The Solid button is Outlined, and has five variants
-
-            <span class="comp_desc_highlight">out-primary</span>,
-            <span class="comp_desc_highlight">out-cta</span>,
-            <span class="comp_desc_highlight">out-danger</span>,
-            <span class="comp_desc_highlight">out-success</span>,
-            <span class="comp_desc_highlight">out-info</span>
-          </p>
-          <div class="wrapper_comp_box p-lg">
-            <div class="wrapper_av flex">
-              <button class="btn out-primary">primary</button>
-              <button class="btn out-cta">button</button>
-              <button class="btn out-danger">danger</button>
-              <button class="btn out-success">success</button>
-              <button class="btn out-info">click me</button>
-            </div>
-          </div>
-
-          <div class="comp_snippet">
-            <script type="text/plain" class="line-numbers language-markup">
-
-              <!-- Button Outlined -->
-
-              <button class="btn out-primary">primary</button>
-              <button class="btn out-cta">button</button>
-              <button class="btn out-danger">danger</button>
-              <button class="btn out-success">success</button>
-            </script>
-          </div>
-        </section>
-
         <!-- Card component  -->
 
         <section class="comp_wrapper">
@@ -715,7 +428,7 @@
           <div class="wrapper_comp_box flex">
             <div class="card_hr flex">
               <div class="card_hr_img">
-                <img src="./assets/xbox.png" alt="xbox" />
+                <img src="../../assets/xbox.png" alt="xbox" />
               </div>
               <div class="card_hr_content">
                 <h2>Xbox One Series S</h2>
@@ -865,7 +578,7 @@
         </section>
       </main>
     </div>
-    <script src="./utils/prism/prism.js"></script>
-    <script src="./app.js"></script>
+    <script src="../../utils/prism/prism.js"></script>
+    <script src="../../app.js"></script>
   </body>
 </html>

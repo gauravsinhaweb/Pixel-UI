@@ -3,57 +3,183 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./avatar.css" />
+    <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="../../core.css" />
+    <link rel="stylesheet" href="../../utils/prism/prism.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixel Design / Avatar</title>
+    <title>Pixel Design / Documentation</title>
   </head>
   <body>
-    <div class="comp_wrapper">
-      <h2 class="comp_head-text">avatar</h2>
-      <p class="comp_desc-text p-lg">
-        The avatar component has 5 sizes,
-        <span class="comp_desc_highlight"> avatar-xl</span>,
-        <span class="comp_desc_highlight"> avatar-lg</span>,
-        <span class="comp_desc_highlight">avatar-md</span>,
-        <span class="comp_desc_highlight">avatar-sm</span>,
-        <span class="comp_desc_highlight">avatar-xs</span>
-      </p>
-      <h3 class="comp_head-text">standard avatars</h3>
-      <div class="wrapper_comp_box p-lg">
-        <div class="wrapper_av flex">
-          <span class="avatar av-xl">
-            <img src="../../assets/av.png" alt="avatar" class="rd" />
-          </span>
-          <span class="avatar av-lg">
-            <img src="../../assets/av.png" alt="avatar" class="sq" />
-          </span>
-          <span class="avatar av-md">
-            <img src="../../assets/av.png" alt="avatar" class="rd" />
-          </span>
-          <span class="avatar av-sm">
-            <img src="../../assets/av.png" alt="avatar" />
-          </span>
-          <span class="avatar av-xs">
-            <img src="../../assets/av.png" alt="avatar" />
-          </span>
-        </div>
-      </div>
+    <!-- Documentation wrapper  -->
+    <div class="container dark_theme">
+      <!-- Navbar  -->
+      <nav class="wrapper_nav flex">
+        <h1>
+          <a href="../../index.html">
+            <span title="pixel-ui" class="h2 nav_brand_text"> PIXEL</span></a
+          >
+          <!-- <span>
+            <img src="./assets/splash.svg" alt="logo" class="nav_brand" />
+          </span> -->
+        </h1>
 
-      <div class="comp_iframe comp_iframe">
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520av-xl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Fav.png%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522rd%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522av_badge_lg%2520online%2520rd%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520av-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Fav.png%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522sq%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522av_badge_md%2520offline%2520sq%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520av-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Fav.png%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522rd%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522av_badge_sm%2520idle%2520rd%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520av-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Fav.png%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar%2520av-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Fav.png%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A"
-          style="
-            width: 800px;
-            height: 177px;
-            border: 0;
-            transform: scale(1);
-            overflow: hidden;
-          "
-          sandbox="allow-scripts allow-same-origin"
-        >
-        </iframe>
-      </div>
+        <div class="wrapper_nav_menu">
+          <ul class="nav_menu flex">
+            <li class="p">
+              <a
+                href="https://twitter.com/gauravsinhaweb"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    class="iconify nav_icon iconify--mdi twitter"
+                    width="32"
+                    height="32"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="p">
+              <a
+                href="https://github.com/gauravsinhaweb/Pixel-UI"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    class="iconify nav_icon iconify--octicon github"
+                    width="32"
+                    height="32"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27c.68 0 1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="p">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true"
+                  role="img"
+                  class="iconify nav_icon iconify--ic theme"
+                  width="32"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26a5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Sidebar  -->
+      <aside>
+        <ul class="wrapper_aside flex">
+          <li class="h5 aside_head">getting started</li>
+          <li class="component">usage</li>
+          <li class="component">installation</li>
+
+          <li class="h5 aside_head">components</li>
+          <a href="../alert/alert.html"><li class="component">Alert</li></a>
+          <a href="./avatar.html"
+            ><li class="component comp_active">Avatar</li></a
+          >
+          <a href="../badge/badge.html"><li class="component">badge</li></a>
+          <a href="../button/button.html"><li class="component">button</li></a>
+          <a href="../card/card.html"><li class="component">card</li></a>
+          <a href="../image/image.html"><li class="component">image</li></a>
+          <a href="../input/input.html"><li class="component">input</li></a>
+        </ul>
+      </aside>
+
+      <!-- Main  -->
+
+      <main>
+        <!-- Avatar component  -->
+
+        <section class="comp_wrapper">
+          <h1 class="comp_head-text">avatar</h1>
+          <p class="comp_desc-text p-lg">
+            The avatar component has 5 sizes,
+            <span class="comp_desc_highlight"> avatar-xl</span>,
+            <span class="comp_desc_highlight"> avatar-lg</span>,
+            <span class="comp_desc_highlight">avatar-md</span>,
+            <span class="comp_desc_highlight">avatar-sm</span>,
+            <span class="comp_desc_highlight">avatar-xs</span>, having
+            <span class="comp_desc_highlight">rd</span>,for round avatar,
+            <span class="comp_desc_highlight">sq</span>,for square avatar,
+          </p>
+          <h2 class="comp_head-text h3">standard avatars</h2>
+          <div class="wrapper_comp_box p-lg">
+            <div class="wrapper_av flex">
+              <span class="avatar av-xl">
+                <img src="../../assets/av.png" alt="avatar" class="rd" />
+              </span>
+              <span class="avatar av-lg">
+                <img src="../../assets/av.png" alt="avatar" class="sq" />
+              </span>
+              <span class="avatar av-md">
+                <img src="../../assets/av.png" alt="avatar" class="rd" />
+              </span>
+              <span class="avatar av-sm">
+                <img src="../../assets/av.png" alt="avatar" />
+              </span>
+              <span class="avatar av-xs">
+                <img src="../../assets/av.png" alt="avatar" />
+              </span>
+            </div>
+          </div>
+          <!-- code snippet  -->
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- Avatar -->
+
+              <span class="avatar av-xl">
+                <img src="../../assets/av.png" alt="avatar" class="rd" />
+              </span>
+              <span class="avatar av-lg">
+                <img src="../../assets/av.png" alt="avatar" class="sq" />
+              </span>
+              <span class="avatar av-md">
+                <img src="../../assets/av.png" alt="avatar" class="rd" />
+              </span>
+            </script>
+          </div>
+        </section>
+      </main>
     </div>
+    <script src="../../utils/prism/prism.js"></script>
+    <script src="../../app.js"></script>
   </body>
 </html>
