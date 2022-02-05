@@ -19,7 +19,13 @@ html {
   --info: #326a83;
   --secondary: #6c6c6c;
   --primary: #5243c2;
+
   --primary-li: #ddeffd;
+  --secondary-li: #ebebeb;
+  --danger-li: #fff5f5;
+  --success-li: #edf7ed;
+  --warning-li: #fff4e5;
+  --info-li: #e5f6fd;
 
   --cta: #303030;
   font-family: roboto, sans-serif;
@@ -47,7 +53,7 @@ html {
 }
 .comp_head-text {
   text-transform: capitalize;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 .wrapper_comp_box {
   color: var(--black);
@@ -100,6 +106,11 @@ html {
   justify-content: space-evenly;
   gap: 3rem;
 }
+
+.comp_img_wrapper {
+  justify-content: space-evenly;
+  align-items: baseline;
+}
 h1,
 h2,
 h3,
@@ -150,7 +161,7 @@ p {
   text-transform: capitalize;
 }
 .comp_snippet {
-  margin-top: 4rem;
+  margin: 4rem 0;
   overflow: auto;
   border-radius: 12px;
   background-color: #011627;
@@ -193,4 +204,6 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
   -ms-user-select: none;
 }
 /* @media screen and (max-width: 768px) {
+
+
 } */

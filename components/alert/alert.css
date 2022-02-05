@@ -1,5 +1,5 @@
 .alert {
-  border: 0.5px solid;
+  border: 1px solid;
   padding: 1.5rem;
   border-radius: 4px;
   margin: 2rem;
@@ -11,27 +11,27 @@
   border-left: 4px solid var(--primary);
 }
 .alert-secondary {
-  background-color: #ebebeb;
+  background-color: var(--secondary-li);
   color: var(--secondary);
   border-left: 4px solid var(--secondary);
 }
 .alert-danger {
-  background-color: #fff5f5;
+  background-color: var(--danger-li);
   color: var(--danger);
   border-left: 4px solid var(--danger);
 }
 .alert-success {
-  background-color: #edf7ed;
+  background-color: var(--success-li);
   color: var(--success);
   border-left: 4px solid var(--success);
 }
 .alert-warning {
-  background-color: #fff4e5;
+  background-color: var(--warning-li);
   color: var(--warning);
   border-left: 4px solid var(--warning);
 }
 .alert-info {
-  background-color: #e5f6fd;
+  background-color: var(--info-li);
   color: var(--info);
   border-left: 4px solid var(--info);
 }
