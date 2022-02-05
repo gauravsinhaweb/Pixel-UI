@@ -124,7 +124,71 @@
 
       <!-- Main  -->
       <!-- Alert component  -->
-      <main></main>
+      <main>
+        <section class="comp_wrapper">
+          <h1 class="comp_head-text">Image</h1>
+
+          <!-- Responsive image  -->
+
+          <h2 class="comp_head-text h3">Responsive Image</h2>
+          <p class="comp_desc-text p-lg">
+            The Image component has two variants
+            <span class="comp_desc_highlight">img-res</span>, for full size
+            Responsive image.
+          </p>
+          <div class="wrapper_comp_box flex-center">
+            <div class="img_res">
+              <img src="https://picsum.photos/400/200" alt="image" />
+            </div>
+          </div>
+
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- Image Responsive (img_res)  -->
+
+              <div class="img_res">
+                <img src="..." alt="..." />
+              </div>
+            </script>
+          </div>
+          <!-- round img, square img  -->
+
+          <h2 class="comp_head-text h3">Round and squared Image</h2>
+          <p class="comp_desc-text p-lg">
+            The Image component has four variants
+            <span class="comp_desc_highlight">img-xl</span>, for extra large
+            image, <span class="comp_desc_highlight">img_lg</span>, for large
+            image, <span class="comp_desc_highlight">img_md</span>, for medium
+            image, <span class="comp_desc_highlight">img_sm</span>, for small
+            image. with round <span class="comp_desc_highlight">rd</span> and
+            square edges <span class="comp_desc_highlight">sq</span>.
+          </p>
+          <div class="wrapper_comp_box flex-center comp_img_wrapper">
+            <div class="img_lg">
+              <img src="https://picsum.photos/400" alt="image" class="sq" />
+            </div>
+            <div class="img_md">
+              <img src="https://picsum.photos/400" alt="image" class="rd" />
+            </div>
+          </div>
+
+          <!-- code snippet  -->
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- Image round(rd) and square(sq)  -->
+
+              <div class="img_lg">
+                <img src="..." alt="..." class="sq" />
+              </div>
+              <div class="img_md">
+                <img src="..." alt="..." class="rd" />
+              </div>
+            </script>
+          </div>
+        </section>
+      </main>
     </div>
     <script src="./utils/prism/prism.js"></script>
     <script src="./app.js"></script>

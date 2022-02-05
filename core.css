@@ -110,6 +110,15 @@ html {
 .comp_img_wrapper {
   justify-content: space-evenly;
   align-items: baseline;
+  gap: 3rem;
+}
+.wrapper_input {
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+.inp_p {
+  color: var(--bg-dark-text);
+  text-transform: capitalize;
 }
 h1,
 h2,
@@ -150,6 +159,9 @@ p {
 }
 .p-lg {
   font-size: 1.6rem;
+}
+.p-sm {
+  font-size: 1.2rem;
 }
 .text_line_th {
   text-decoration: line-through;

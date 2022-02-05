@@ -1,0 +1,20 @@
+.img_res {
+  height: 100%;
+  width: 100%;
+}
+.img_xl {
+  max-height: 60rem;
+  max-width: 60rem;
+}
+.img_lg {
+  max-height: 40rem;
+  max-width: 40rem;
+}
+.img_md {
+  max-height: 30rem;
+  max-width: 30rem;
+}
+.img_sm {
+  max-height: 20rem;
+  max-width: 20rem;
+}

@@ -3,25 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./core.css" />
     <link rel="stylesheet" href="./utils/prism/prism.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=100%" />
+    <!-- <meta name="viewport" content="width=100%" /> -->
     <title>Pixel Design / Documentation</title>
   </head>
   <body>
     <!-- Documentation wrapper  -->
-    <div class="container dark_theme">
+    <div class="container">
       <!-- Navbar  -->
       <nav class="wrapper_nav flex">
         <h1>
           <a href="./index.html">
             <span title="pixel-ui" class="h2 nav_brand_text"> PIXEL</span></a
           >
-          <!-- <span>
-            <img src="./assets/splash.svg" alt="logo" class="nav_brand" />
-          </span> -->
         </h1>
 
         <div class="wrapper_nav_menu">
@@ -39,8 +37,8 @@
                     aria-hidden="true"
                     role="img"
                     class="iconify nav_icon iconify--mdi twitter"
-                    width="32"
-                    height="32"
+                    width="26"
+                    height="26"
                     preserveAspectRatio="xMidYMid meet"
                     viewBox="0 0 24 24"
                   >
@@ -65,8 +63,8 @@
                     aria-hidden="true"
                     role="img"
                     class="iconify nav_icon iconify--octicon github"
-                    width="32"
-                    height="32"
+                    width="26"
+                    height="26"
                     preserveAspectRatio="xMidYMid meet"
                     viewBox="0 0 16 16"
                   >
@@ -87,8 +85,8 @@
                   aria-hidden="true"
                   role="img"
                   class="iconify nav_icon iconify--ic theme"
-                  width="32"
-                  height="32"
+                  width="26"
+                  height="26"
                   preserveAspectRatio="xMidYMid meet"
                   viewBox="0 0 24 24"
                 >
@@ -232,13 +230,13 @@
               <!-- Avatar -->
 
               <span class="avatar av-xl">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
+                <img src="..." alt="..." class="rd" />
               </span>
               <span class="avatar av-lg">
-                <img src="../../assets/av.png" alt="avatar" class="sq" />
+                <img src="..." alt="..." class="sq" />
               </span>
               <span class="avatar av-md">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
+                <img src="..." alt="..." class="rd" />
               </span>
             </script>
           </div>
@@ -861,6 +859,135 @@
                   <li>unlimited users</li>
                 </ul>
               </div>
+            </script>
+          </div>
+        </section>
+
+        <!-- Image -->
+
+        <section class="comp_wrapper">
+          <h1 class="comp_head-text">Image</h1>
+
+          <!-- Responsive image  -->
+
+          <h2 class="comp_head-text h3">Responsive Image</h2>
+          <p class="comp_desc-text p-lg">
+            The Image component has two variants
+            <span class="comp_desc_highlight">img-res</span>, for full size
+            Responsive image.
+          </p>
+          <div class="wrapper_comp_box flex-center">
+            <div class="img_res">
+              <img src="https://picsum.photos/400/200" alt="image" />
+            </div>
+          </div>
+
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- Image Responsive (img_res)  -->
+
+              <div class="img_res">
+                <img src="..." alt="..." />
+              </div>
+            </script>
+          </div>
+          <!-- round img, square img  -->
+
+          <h2 class="comp_head-text h3">Round and squared Image</h2>
+          <p class="comp_desc-text p-lg">
+            The Image component has four variants
+            <span class="comp_desc_highlight">img-xl</span>, for extra large
+            image, <span class="comp_desc_highlight">img_lg</span>, for large
+            image, <span class="comp_desc_highlight">img_md</span>, for medium
+            image, <span class="comp_desc_highlight">img_sm</span>, for small
+            image. with round <span class="comp_desc_highlight">rd</span> and
+            square edges <span class="comp_desc_highlight">sq</span>.
+          </p>
+          <div class="wrapper_comp_box flex-center comp_img_wrapper">
+            <div class="img_lg">
+              <img src="https://picsum.photos/400" alt="image" class="sq" />
+            </div>
+            <div class="img_md">
+              <img src="https://picsum.photos/400" alt="image" class="rd" />
+            </div>
+          </div>
+
+          <!-- code snippet  -->
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- Image round(rd) and square(sq)  -->
+
+              <div class="img_lg">
+                <img src="..." alt="..." class="sq" />
+              </div>
+              <div class="img_md">
+                <img src="..." alt="..." class="rd" />
+              </div>
+            </script>
+          </div>
+        </section>
+
+        <!-- Input -->
+
+        <section class="comp_wrapper">
+          <h1 class="comp_head-text">input</h1>
+          <p class="comp_desc-text p-lg">
+            The input component has two variants
+            <i>input sizes</i> and <i>input type</i>
+          </p>
+
+          <h2 class="comp_head-text h3">input sizes</h2>
+          <p>
+            <span class="comp_desc_highlight"> inp_lg</span>,
+            <span class="comp_desc_highlight"> inp_md</span>,
+            <span class="comp_desc_highlight"> inp_sm</span>
+          </p>
+          <div class="wrapper_comp_box flex-center">
+            <div class="wrapper_input flex">
+              <p class="p inp_p">input large:</p>
+              <input class="basic_inp inp_lg" type="text" />
+              <p class="p inp_p">input medium:</p>
+
+              <input class="basic_inp inp_md" type="text" />
+              <p class="p inp_p">input small:</p>
+
+              <input class="basic_inp inp_sm" type="text" />
+            </div>
+          </div>
+
+          <!-- code snippet  -->
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- Image round(rd) and square(sq)  -->
+
+              <input class="basic_inp inp_lg" type="text" />
+              <input class="basic_inp inp_md" type="text" />
+              <input class="basic_inp inp_sm" type="text" />
+            </script>
+          </div>
+          <!-- input type  -->
+          <h2 class="comp_head-text h3">input type</h2>
+          <p class="comp_desc-text p-lg">
+            The input component has one type i.e.
+            <i>Input error</i> <span class="comp_desc_highlight">inp_err</span>
+          </p>
+          <div class="wrapper_comp_box flex-center">
+            <div class="wrapper_input flex">
+              <p class="p inp_p">input error (inp_err):</p>
+              <input class="inp_lg inp_err" type="text" />
+            </div>
+          </div>
+
+          <!-- code snippet  -->
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- Input error  -->
+
+              <input class="inp_lg inp_err" type="text" />
             </script>
           </div>
         </section>
