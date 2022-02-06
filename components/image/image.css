@@ -1,6 +1,7 @@
 .img_res {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .img_xl {
   max-height: 60rem;
