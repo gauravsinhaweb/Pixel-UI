@@ -95,6 +95,10 @@
 p {
   margin: 1rem 0;
 }
+.card_hr_desc {
+  word-wrap: break-word;
+  width: fit-content;
+}
 .btn_wrapper_hr {
   margin: 2rem;
   gap: 3rem;
@@ -156,13 +160,12 @@ p {
   .card_hr {
     justify-content: center;
   }
-<<<<<<< Updated upstream
+
   .card_hr_desc {
     width: 30rem;
-=======
+  }
   .card_hr_content {
     max-width: 100%;
     margin: 2rem;
->>>>>>> Stashed changes
   }
 }
