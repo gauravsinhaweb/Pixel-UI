@@ -1,0 +1,95 @@
+html {
+  --logo-blue: #57a4ff;
+  --logo-pink: #f072ae;
+  --logo-yellow: #ffda44;
+
+  --white: #fff;
+  --black: #000;
+
+  --bg-color: #f6f6f6;
+  --text-primary: #616161;
+
+  --bg-dark: #303030;
+  --bg-dark-text: #7f7f7f;
+
+  --danger: #c52929;
+  --success: #3d603f;
+  --warning: #764f17;
+  --info: #326a83;
+  --secondary: #6c6c6c;
+  --primary: #5243c2;
+
+  --primary-li: #ddeffd;
+  --secondary-li: #ebebeb;
+  --danger-li: #fff5f5;
+  --success-li: #edf7ed;
+  --warning-li: #fff4e5;
+  --info-li: #e5f6fd;
+
+  --cta: #303030;
+  font-family: roboto, sans-serif;
+
+  scroll-behavior: smooth;
+}
+
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: 1.2;
+  font-weight: 500;
+}
+.h1,
+h1 {
+  font-size: 4rem;
+}
+.h2,
+h2 {
+  font-size: 2.4rem;
+}
+.h3,
+h3 {
+  font-size: 2rem;
+}
+.h4,
+h4 {
+  font-size: 1.8rem;
+}
+.h5,
+h5 {
+  font-size: 1.6rem;
+}
+.p,
+p {
+  font-size: 1.4rem;
+}
+.p-lg {
+  font-size: 1.6rem;
+}
+.p-sm {
+  font-size: 1.2rem;
+}
+.text_line_th {
+  text-decoration: line-through;
+}
+.text_uc {
+  text-transform: uppercase;
+}
+.text_cl {
+  text-transform: capitalize;
+}
