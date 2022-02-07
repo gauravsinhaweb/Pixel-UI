@@ -161,9 +161,6 @@ p {
     justify-content: center;
   }
 
-  .card_hr_desc {
-    width: 30rem;
-  }
   .card_hr_content {
     max-width: 100%;
     margin: 2rem;
