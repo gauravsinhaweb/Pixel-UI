@@ -1,0 +1,19 @@
+.grid {
+  display: grid;
+  grid-template-areas: "one two";
+}
+.grid-5050 {
+  grid-template-columns: 50% 50%;
+}
+.grid-3070 {
+  grid-template-columns: 30% 70%;
+}
+.grid-7030 {
+  grid-template-columns: 70% 30%;
+}
+.content-one {
+  grid-area: one;
+}
+.content-two {
+  grid-area: two;
+}

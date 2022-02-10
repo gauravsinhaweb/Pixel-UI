@@ -1,0 +1,16 @@
+.wrapper_nav {
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  background-color: var(--cta);
+  color: var(--white);
+  padding: 0 4rem;
+}
+.nav_icons {
+  gap: 4rem;
+  font-size: 2rem;
+  align-items: baseline;
+}
+.nav_icons li {
+  cursor: pointer;
+}

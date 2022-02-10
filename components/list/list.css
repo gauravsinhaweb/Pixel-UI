@@ -1,0 +1,16 @@
+.list-circle {
+  list-style: circle;
+}
+.list-square {
+  list-style: square;
+}
+.list-none {
+  list-style: none;
+}
+.catagory {
+  margin: 2rem 0;
+}
+
+.list-item li {
+  margin: 1rem 0;
+}

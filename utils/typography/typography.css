@@ -93,3 +93,6 @@ p {
 .text_cl {
   text-transform: capitalize;
 }
+.text-center {
+  text-align: center;
+}

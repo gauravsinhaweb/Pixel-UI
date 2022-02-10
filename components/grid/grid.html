@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../core.css" />
     <link rel="stylesheet" href="../../utils/prism/prism.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixel / Image</title>
+    <title>Pixel / Alert</title>
   </head>
   <body>
     <!-- Documentation wrapper  -->
@@ -155,69 +155,58 @@
       </aside>
 
       <!-- Main  -->
-      <!-- Alert component  -->
+
       <main>
-        <!-- Image -->
+        <!-- grid component  -->
+
+        <!-- grid  -->
 
         <section class="comp_wrapper">
-          <h1 class="comp_head-text">Image</h1>
+          <h1 class="comp_head-text">grid</h1>
 
-          <!-- Responsive image  -->
-
-          <h2 class="comp_head-text h3">Responsive Image</h2>
-          <p class="comp_desc-text p-lg">
-            The Image component has two variants
-            <span class="comp_desc_highlight">img-res</span>, for full size
-            Responsive image.
-          </p>
-          <div class="wrapper_comp_box flex-center">
-            <div class="img_res">
-              <img src="https://picsum.photos/800/300" alt="image" />
-            </div>
-          </div>
-
-          <div class="comp_snippet">
-            <script type="text/plain" class="line-numbers language-markup">
-
-              <!-- Image Responsive (img_res)  -->
-
-              <div class="img_res">
-                <img src="..." alt="..." />
+          <div class="wrapper_comp_box">
+            <div class="grid grid-5050">
+              <div class="content-one">
+                <img src="https://picsum.photos/400/200" alt="img" />
               </div>
-            </script>
-          </div>
-          <!-- round img, square img  -->
-
-          <h2 class="comp_head-text h3">Round and squared Image</h2>
-          <p class="comp_desc-text p-lg">
-            The Image component has four variants
-            <span class="comp_desc_highlight">img-xl</span>, for extra large
-            image, <span class="comp_desc_highlight">img_lg</span>, for large
-            image, <span class="comp_desc_highlight">img_md</span>, for medium
-            image, <span class="comp_desc_highlight">img_sm</span>, for small
-            image. with round <span class="comp_desc_highlight">rd</span> and
-            square edges <span class="comp_desc_highlight">sq</span>.
-          </p>
-          <div class="wrapper_comp_box flex-center comp_img_wrapper">
-            <div class="img_lg">
-              <img src="https://picsum.photos/400" alt="image" class="sq" />
+              <div class="content-two flex-center">
+                <h1>grid-5050.</h1>
+              </div>
             </div>
-            <div class="img_md">
-              <img src="https://picsum.photos/400" alt="image" class="rd" />
+          </div>
+          <div class="wrapper_comp_box">
+            <div class="grid grid-3070">
+              <div class="content-one flex-center">
+                <h1>grid-3070.</h1>
+              </div>
+              <div class="content-two">
+                <img src="https://picsum.photos/400/200" alt="img" />
+              </div>
+            </div>
+          </div>
+          <div class="wrapper_comp_box">
+            <div class="grid grid-7030">
+              <div class="content-one">
+                <img src="https://picsum.photos/400/200" alt="img" />
+              </div>
+              <div class="content-two flex-center">
+                <h1>grid-7030.</h1>
+              </div>
             </div>
           </div>
 
           <!-- code snippet  -->
           <div class="comp_snippet">
             <script type="text/plain" class="line-numbers language-markup">
+              <!-- Grid -->
 
-              <!-- Image round(rd) and square(sq)  -->
-
-              <div class="img_lg">
-                <img src="..." alt="..." class="sq" />
-              </div>
-              <div class="img_md">
-                <img src="..." alt="..." class="rd" />
+              <div class="grid grid-5050">
+                <div class="content-one">
+                  <img src="..." alt="..." />
+                </div>
+                <div class="content-two flex-center">
+                  <h1>grid-5050.</h1>
+                </div>
               </div>
             </script>
           </div>
@@ -225,6 +214,6 @@
       </main>
     </div>
     <script src="../../utils/prism/prism.js"></script>
-    <script src="./app.js"></script>
+    <script src="../../app.js"></script>
   </body>
 </html>

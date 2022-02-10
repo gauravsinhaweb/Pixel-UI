@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="../../core.css" />
     <link rel="stylesheet" href="../../utils/prism/prism.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pixel / Button</title>
   </head>
@@ -105,20 +111,52 @@
       <!-- Sidebar  -->
       <aside>
         <ul class="wrapper_aside flex">
-          <li class="h5 aside_head">getting started</li>
-          <li class="component">usage</li>
+          <li class="aside_head">getting started</li>
           <li class="component">installation</li>
+          <a href="/components/typography/typography.html"
+            ><li class="component">Text utilities</li></a
+          >
 
           <li class="h5 aside_head">components</li>
-          <a href="../alert/alert.html"><li class="component">Alert</li></a>
-          <a href="../avatar/avatar.html"><li class="component">Avatar</li></a>
-          <a href="../badge/badge.html"><li class="component">badge</li></a>
-          <a href="./button.html"
-            ><li class="component comp_active">button</li></a
+          <a href="/components/alert/alert.html"
+            ><li class="component comp_active">Alert</li></a
           >
-          <a href="../card/card.html"><li class="component">card</li></a>
-          <a href="../image/image.html"><li class="component">image</li></a>
-          <a href="../input/input.html"><li class="component">input</li></a>
+          <a href="/components/avatar/avatar.html"
+            ><li class="component">Avatar</li></a
+          >
+          <a href="/components/badge/badge.html"
+            ><li class="component">badge</li></a
+          >
+          <a href="/components/button/button.html"
+            ><li class="component">button</li></a
+          >
+          <a href="/components/card/card.html"
+            ><li class="component">card</li></a
+          >
+          <a href="/components/image/image.html"
+            ><li class="component">image</li></a
+          >
+          <a href="/components/input/input.html"
+            ><li class="component">input</li></a
+          >
+          <a href="/components/list/list.html"
+            ><li class="component">List</li></a
+          >
+          <a href="/components/modal/modal.html"
+            ><li class="component">Modal</li></a
+          >
+          <a href="/components/navigation/navigation.html"
+            ><li class="component">Navigation</li></a
+          >
+          <a href="/components/rating/rating.html"
+            ><li class="component">Rating</li></a
+          >
+          <a href="/components/snackbar/snackbar.html"
+            ><li class="component">Snackbar</li></a
+          >
+          <a href="/components/grid/grid.html"
+            ><li class="component">grid</li></a
+          >
         </ul>
       </aside>
 
@@ -181,7 +219,7 @@
               <button class="btn out-cta">button</button>
               <button class="btn out-danger">danger</button>
               <button class="btn out-success">success</button>
-              <button class="btn out-info">click me</button>
+              <button class="btn out-info btn-dismiss">Dismiss</button>
             </div>
           </div>
 
@@ -194,6 +232,43 @@
               <button class="btn out-cta">button</button>
               <button class="btn out-danger">danger</button>
               <button class="btn out-success">success</button>
+            </script>
+          </div>
+          <!-- floating action, icon button  -->
+
+          <h2 class="comp_head-text h3">icon and floating action Button</h2>
+          <p class="comp_desc_text p-lg">
+            The floating action button
+            <span class="comp_desc_highlight">fa-btn</span>
+            and button with an icon
+            <span class="comp_desc_highlight">btn-icon</span>,
+          </p>
+          <div class="wrapper_comp_box p-lg">
+            <div class="wrapper_av flex">
+              <button class="btn fa-btn">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+              </button>
+
+              <button class="btn btn-cta">
+                Login
+                <i class="fa btn-icon fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- icon and floating action button-->
+
+              <button class="btn fa-btn">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+              </button>
+
+              <button class="btn btn-cta">
+                Sign Up
+                <i class="fa btn-icon fa-arrow-right" aria-hidden="true"></i>
+              </button>
             </script>
           </div>
         </section>

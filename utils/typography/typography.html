@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../core.css" />
     <link rel="stylesheet" href="../../utils/prism/prism.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixel / Image</title>
+    <title>Pixel / Input</title>
   </head>
   <body>
     <!-- Documentation wrapper  -->
@@ -18,6 +18,7 @@
           <a href="../../index.html">
             <span title="pixel-ui" class="h2 nav_brand_text"> PIXEL</span></a
           >
+
           <!-- <span>
             <img src="./assets/splash.svg" alt="logo" class="nav_brand" />
           </span> -->
@@ -157,68 +158,104 @@
       <!-- Main  -->
       <!-- Alert component  -->
       <main>
-        <!-- Image -->
-
         <section class="comp_wrapper">
-          <h1 class="comp_head-text">Image</h1>
+          <h1 class="comp_head-text">Typography</h1>
 
-          <!-- Responsive image  -->
+          <!-- heading  -->
 
-          <h2 class="comp_head-text h3">Responsive Image</h2>
+          <h2 class="comp_head-text h3">heading</h2>
           <p class="comp_desc-text p-lg">
-            The Image component has two variants
-            <span class="comp_desc_highlight">img-res</span>, for full size
-            Responsive image.
+            <span class="comp_desc_highlight">.h1</span>,
+            <span class="comp_desc_highlight">.h2</span>,
+            <span class="comp_desc_highlight">.h3</span>,
+            <span class="comp_desc_highlight">.h4</span>,
           </p>
-          <div class="wrapper_comp_box flex-center">
-            <div class="img_res">
-              <img src="https://picsum.photos/800/300" alt="image" />
-            </div>
+          <div class="wrapper_comp_box wrapper_typography flex">
+            <h1>This is heading 1.</h1>
+            <h2>This is heading 2.</h2>
+            <h3>This is heading 3.</h3>
+            <h4>This is heading 4.</h4>
           </div>
 
           <div class="comp_snippet">
             <script type="text/plain" class="line-numbers language-markup">
 
-              <!-- Image Responsive (img_res)  -->
+              <!-- typography - headings  -->
 
-              <div class="img_res">
-                <img src="..." alt="..." />
-              </div>
+              <h1>This is heading 1</h1>
+              <h2>This is heading 2</h2>
+              <h3>This is heading 3</h3>
+              <h4>This is heading 4</h4>
             </script>
           </div>
-          <!-- round img, square img  -->
+          <!-- paragraph  -->
 
-          <h2 class="comp_head-text h3">Round and squared Image</h2>
+          <h2 class="comp_head-text h3">paragraph - gray text</h2>
           <p class="comp_desc-text p-lg">
-            The Image component has four variants
-            <span class="comp_desc_highlight">img-xl</span>, for extra large
-            image, <span class="comp_desc_highlight">img_lg</span>, for large
-            image, <span class="comp_desc_highlight">img_md</span>, for medium
-            image, <span class="comp_desc_highlight">img_sm</span>, for small
-            image. with round <span class="comp_desc_highlight">rd</span> and
-            square edges <span class="comp_desc_highlight">sq</span>.
+            <span class="comp_desc_highlight">.p</span>,
+            <span class="comp_desc_highlight">.p-lg</span>,
+            <span class="comp_desc_highlight">.p-sm</span>,
           </p>
-          <div class="wrapper_comp_box flex-center comp_img_wrapper">
-            <div class="img_lg">
-              <img src="https://picsum.photos/400" alt="image" class="sq" />
-            </div>
-            <div class="img_md">
-              <img src="https://picsum.photos/400" alt="image" class="rd" />
-            </div>
+          <div class="wrapper_comp_box wrapper_typography flex">
+            <p class="p-lg">This is paragraph large. (p-lg)</p>
+            <p class="p">This is paragraph. (p)</p>
+            <p class="p-sm">This is paragraph small. (p-sm)</p>
           </div>
 
-          <!-- code snippet  -->
           <div class="comp_snippet">
             <script type="text/plain" class="line-numbers language-markup">
 
-              <!-- Image round(rd) and square(sq)  -->
+              <!-- typography - paragraph  -->
 
-              <div class="img_lg">
-                <img src="..." alt="..." class="sq" />
-              </div>
-              <div class="img_md">
-                <img src="..." alt="..." class="rd" />
-              </div>
+              <p class="p-lg">This is paragraph large.</p>
+              <p class="p">This is paragraph.</p>
+              <p class="p-sm">This is paragraph small.</p>
+            </script>
+          </div>
+
+          <!-- text-center  -->
+
+          <h2 class="comp_head-text h3">text center</h2>
+          <p class="comp_desc-text p-lg">
+            <span class="comp_desc_highlight">.text-center</span>,
+          </p>
+          <div class="wrapper_comp_box wrapper_typography flex">
+            <p class="text-center">This is a paragraph in center.</p>
+          </div>
+
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- typography - text-center  -->
+
+
+              <p class="text-center">This is a paragraph in center.</p>
+            </script>
+          </div>
+
+          <!-- text style  -->
+
+          <h2 class="comp_head-text h3">text styles</h2>
+          <p class="comp_desc-text p-lg">
+            Text styles are, text line through
+            <span class="comp_desc_highlight">.text_line_th</span> , text
+            uppercase <span class="comp_desc_highlight">.text_uc</span> , and
+            text capitalize <span class="comp_desc_highlight">.text_cl</span>
+          </p>
+          <div class="wrapper_comp_box wrapper_typography flex">
+            <p class="text_line_th">This is a line through text.</p>
+            <p class="text_uc">This is a uppercase text.</p>
+            <p class="text_c">This is a capitalize text.</p>
+          </div>
+
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- typography - text styles  -->
+
+              <p class="text_line_th">This is a line through text.</p>
+              <p class="text_uc">This is a uppercase text.</p>
+              <p class="text_c">This is a capitalize text.</p>
             </script>
           </div>
         </section>

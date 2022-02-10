@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../core.css" />
     <link rel="stylesheet" href="../../utils/prism/prism.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixel / Image</title>
+    <title>Pixel / Input</title>
   </head>
   <body>
     <!-- Documentation wrapper  -->
@@ -18,6 +18,7 @@
           <a href="../../index.html">
             <span title="pixel-ui" class="h2 nav_brand_text"> PIXEL</span></a
           >
+
           <!-- <span>
             <img src="./assets/splash.svg" alt="logo" class="nav_brand" />
           </span> -->
@@ -155,55 +156,49 @@
       </aside>
 
       <!-- Main  -->
-      <!-- Alert component  -->
       <main>
-        <!-- Image -->
+        <!-- Modal  -->
 
         <section class="comp_wrapper">
-          <h1 class="comp_head-text">Image</h1>
-
-          <!-- Responsive image  -->
-
-          <h2 class="comp_head-text h3">Responsive Image</h2>
+          <h1 class="comp_head-text">Modal</h1>
           <p class="comp_desc-text p-lg">
-            The Image component has two variants
-            <span class="comp_desc_highlight">img-res</span>, for full size
-            Responsive image.
+            Modals are used to show some important information to the user and
+            they are closed only when the user selects some option.
           </p>
+
           <div class="wrapper_comp_box flex-center">
-            <div class="img_res">
-              <img src="https://picsum.photos/800/300" alt="image" />
-            </div>
-          </div>
+            <div>
+              <button id="open-modal" class="btn btn-primary">
+                Open modal
+              </button>
 
-          <div class="comp_snippet">
-            <script type="text/plain" class="line-numbers language-markup">
+              <!-- modal box -->
 
-              <!-- Image Responsive (img_res)  -->
+              <div id="modal" class="modal">
+                <div class="card card-content modal_box">
+                  <div class="flex modal_title">
+                    <div class="title">Modal</div>
+                    <button class="btn_modal">
+                      <i
+                        id="close-modal"
+                        class="fa fa-times"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </div>
+                  <hr />
 
-              <div class="img_res">
-                <img src="..." alt="..." />
+                  <div class="content">
+                    Ex ad et excepteur ad qui adipisicing velit excepteur ea.
+                    Eiusmod .Laboris voluptate ad in nostrud dolore do commodo.
+                    Eiusmod aliqua dolore aliqua laboris voluptate excepteur
+                  </div>
+                  <div class="footer btn_wrapper_cwd flex">
+                    <button class="btn btn-cta">action 1</button>
+                    <button class="btn out-cta">action 2</button>
+                  </div>
+                </div>
               </div>
-            </script>
-          </div>
-          <!-- round img, square img  -->
-
-          <h2 class="comp_head-text h3">Round and squared Image</h2>
-          <p class="comp_desc-text p-lg">
-            The Image component has four variants
-            <span class="comp_desc_highlight">img-xl</span>, for extra large
-            image, <span class="comp_desc_highlight">img_lg</span>, for large
-            image, <span class="comp_desc_highlight">img_md</span>, for medium
-            image, <span class="comp_desc_highlight">img_sm</span>, for small
-            image. with round <span class="comp_desc_highlight">rd</span> and
-            square edges <span class="comp_desc_highlight">sq</span>.
-          </p>
-          <div class="wrapper_comp_box flex-center comp_img_wrapper">
-            <div class="img_lg">
-              <img src="https://picsum.photos/400" alt="image" class="sq" />
-            </div>
-            <div class="img_md">
-              <img src="https://picsum.photos/400" alt="image" class="rd" />
             </div>
           </div>
 
@@ -211,16 +206,34 @@
           <div class="comp_snippet">
             <script type="text/plain" class="line-numbers language-markup">
 
-              <!-- Image round(rd) and square(sq)  -->
+              <!-- Modal  -->
 
-              <div class="img_lg">
-                <img src="..." alt="..." class="sq" />
-              </div>
-              <div class="img_md">
-                <img src="..." alt="..." class="rd" />
+              <div  class="modal">
+                <div class="card card-content modal_box">
+                  <div class="flex modal_title">
+                    <div class="title">Modal</div>
+                    <button class="btn_modal">
+                      <i
+                        class="fa fa-times"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </div>
+
+                  <div class="content">
+                    Ex ad et excepteur ad qui adipisicing velit excepteur ea.
+                    Eiusmod .Laboris voluptate ad in nostrud dolore do commodo.
+                    Eiusmod aliqua dolore aliqua laboris voluptate excepteur
+                  </div>
+                  <div class="footer btn_wrapper_cwd flex">
+                      <button class="btn btn-cta">action 1</button>
+                      <button class="btn out-cta">action 2</button>
+                  </div>
+                </div>
               </div>
             </script>
           </div>
+          <script src="./components/modal/modal.js"></script>
         </section>
       </main>
     </div>
