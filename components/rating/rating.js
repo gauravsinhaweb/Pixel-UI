@@ -12,6 +12,7 @@ let starArray = [
   ratingStar4,
   ratingStar5,
 ];
+colorStars(3);
 
 // 1 Star Rating
 ratingStar1.addEventListener("click", () => {
@@ -39,9 +40,9 @@ ratingStar5.addEventListener("click", () => {
 });
 
 // Here we are resetting the rating bar
-resetRatingButton.addEventListener("click", () => {
-  colorStars(0);
-});
+// resetRatingButton.addEventListener("click", () => {
+//   colorStars(0);
+// });
 
 function colorStars(index) {
   let iterator = 0;
@@ -57,6 +58,6 @@ function colorStars(index) {
     iterator++;
   }
 
-  // To display how many stars user has selceted
-  ratingStarInfo.innerHTML = `${index} Stars`;
+  // To display how many stars user has selected
+  // ratingStarInfo.innerHTML = `${index} Stars`;
 }
