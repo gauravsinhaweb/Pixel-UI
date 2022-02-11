@@ -133,7 +133,7 @@
             ><li class="component">image</li></a
           >
           <a href="/components/input/input.html"
-            ><li class="component comp_active">input</li></a
+            ><li class="component">input</li></a
           >
           <a href="/components/list/list.html"
             ><li class="component">List</li></a
@@ -145,7 +145,7 @@
             ><li class="component">Navigation</li></a
           >
           <a href="/components/rating/rating.html"
-            ><li class="component">Rating</li></a
+            ><li class="component comp_active">Rating</li></a
           >
           <a href="/components/snackbar/snackbar.html"
             ><li class="component">Snackbar</li></a
@@ -157,72 +157,59 @@
       </aside>
 
       <!-- Main  -->
-      <!-- Alert component  -->
       <main>
-        <!-- Input -->
+        <!-- Rating -->
+
+        <!-- Rating -->
 
         <section class="comp_wrapper">
-          <h1 class="comp_head-text">input</h1>
-          <p class="comp_desc-text p-lg">
-            The input component has two variants
-            <i>input sizes</i> and <i>input type</i>
-          </p>
-
-          <h2 class="comp_head-text h3">input sizes</h2>
-          <p>
-            <span class="comp_desc_highlight"> inp_lg</span>,
-            <span class="comp_desc_highlight"> inp_md</span>,
-            <span class="comp_desc_highlight"> inp_sm</span>
+          <h1 class="comp_head-text">rating</h1>
+          <p class="p-lg">
+            Rating components can be used as read-only badge or in reviews
+            section. Can be used in reviews section as form too.
           </p>
           <div class="wrapper_comp_box flex-center">
-            <div class="wrapper_input flex">
-              <p class="p inp_p">input large:</p>
-              <input class="basic_inp inp_lg" type="text" />
-              <p class="p inp_p">input medium:</p>
-
-              <input class="basic_inp inp_md" type="text" />
-              <p class="p inp_p">input small:</p>
-
-              <input class="basic_inp inp_sm" type="text" />
+            <div class="star">
+              <span>
+                <i class="fa fa-star" aria-hidden="true" id="rating-star-1"></i
+              ></span>
+              <span>
+                <i class="fa fa-star" aria-hidden="true" id="rating-star-2"></i
+              ></span>
+              <span>
+                <i class="fa fa-star" aria-hidden="true" id="rating-star-3"></i
+              ></span>
+              <span>
+                <i class="fa fa-star" aria-hidden="true" id="rating-star-4"></i
+              ></span>
+              <span>
+                <i class="fa fa-star" aria-hidden="true" id="rating-star-5"></i
+              ></span>
             </div>
           </div>
 
           <!-- code snippet  -->
           <div class="comp_snippet">
             <script type="text/plain" class="line-numbers language-markup">
+              <!-- Rating-->
 
-              <!-- Image round(rd) and square(sq)  -->
-
-              <input class="basic_inp inp_lg" type="text" />
-              <input class="basic_inp inp_md" type="text" />
-              <input class="basic_inp inp_sm" type="text" />
-            </script>
-          </div>
-          <!-- input type  -->
-          <h2 class="comp_head-text h3">input type</h2>
-          <p class="comp_desc-text p-lg">
-            The input component has one type i.e.
-            <i>Input error</i> <span class="comp_desc_highlight">inp_err</span>
-          </p>
-          <div class="wrapper_comp_box flex-center">
-            <div class="wrapper_input flex">
-              <p class="p inp_p">input error (inp_err):</p>
-              <input class="inp_lg inp_err" type="text" />
-            </div>
-          </div>
-
-          <!-- code snippet  -->
-          <div class="comp_snippet">
-            <script type="text/plain" class="line-numbers language-markup">
-
-              <!-- Input error  -->
-
-              <input class="inp_lg inp_err" type="text" />
+              <nav class="h3 wrapper_nav flex">
+                <div class="nav_brand_text">Brand text</div>
+                <div>Middle Item</div>
+                <div>
+                  <ul class="flex nav_icons list-none">
+                    <li>option 1</li>
+                    <li>option 2</li>
+                    <li>option 3</li>
+                  </ul>
+                </div>
+              </nav>
             </script>
           </div>
         </section>
       </main>
     </div>
+    <script src="/components/rating/rating.js"></script>
     <script src="../../utils/prism/prism.js"></script>
     <script src="/app.js"></script>
   </body>
