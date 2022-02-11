@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../core.css" />
     <link rel="stylesheet" href="../../utils/prism/prism.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixel / Avatar</title>
+    <title>Pixel / Navigation</title>
   </head>
   <body>
     <!-- Documentation wrapper  -->
@@ -19,6 +19,7 @@
           <a href="../../index.html">
             <span title="pixel-ui" class="h2 nav_brand_text"> PIXEL</span></a
           >
+
           <!-- <span>
             <img src="./assets/splash.svg" alt="logo" class="nav_brand" />
           </span> -->
@@ -117,7 +118,7 @@
             ><li class="component">Alert</li></a
           >
           <a href="/components/avatar/avatar.html"
-            ><li class="component comp_active">Avatar</li></a
+            ><li class="component">Avatar</li></a
           >
           <a href="/components/badge/badge.html"
             ><li class="component">badge</li></a
@@ -141,7 +142,7 @@
             ><li class="component">Modal</li></a
           >
           <a href="/components/navigation/navigation.html"
-            ><li class="component">Navigation</li></a
+            ><li class="component comp_active">Navigation</li></a
           >
           <a href="/components/rating/rating.html"
             ><li class="component">Rating</li></a
@@ -156,63 +157,64 @@
       </aside>
 
       <!-- Main  -->
-
+      <!-- Alert component  -->
       <main>
-        <!-- Avatar component  -->
+        <!-- Navigation -->
 
         <section class="comp_wrapper">
-          <h1 class="comp_head-text">avatar</h1>
-          <p class="comp_desc-text p-lg">
-            The avatar component has 5 sizes,
-            <span class="comp_desc_highlight"> avatar-xl</span>,
-            <span class="comp_desc_highlight"> avatar-lg</span>,
-            <span class="comp_desc_highlight">avatar-md</span>,
-            <span class="comp_desc_highlight">avatar-sm</span>,
-            <span class="comp_desc_highlight">avatar-xs</span>, having
-            <span class="comp_desc_highlight">rd</span>,for round avatar,
-            <span class="comp_desc_highlight">sq</span>,for square avatar,
-          </p>
-          <h2 class="comp_head-text h3">standard avatars</h2>
-          <div class="wrapper_comp_box p-lg">
-            <div class="wrapper_av flex">
-              <span class="avatar av-xl">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
-              </span>
-              <span class="avatar av-lg">
-                <img src="../../assets/av.png" alt="avatar" class="sq" />
-              </span>
-              <span class="avatar av-md">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
-              </span>
-              <span class="avatar av-sm">
-                <img src="../../assets/av.png" alt="avatar" />
-              </span>
-              <span class="avatar av-xs">
-                <img src="../../assets/av.png" alt="avatar" />
-              </span>
-            </div>
+          <h1 class="comp_head-text">Navigation</h1>
+
+          <div class="wrapper_comp_box">
+            <nav class="h3 wrapper_nav flex">
+              <div class="nav_brand_text">Pixel</div>
+              <div>
+                <input
+                  class="basic_inp inp_sm"
+                  type="text"
+                  placeholder="search"
+                />
+              </div>
+              <div class="">
+                <ul class="flex nav_icons list-none">
+                  <li>
+                    <button class="btn btn-primary">login</button>
+                  </li>
+
+                  <li class="wrapper_badge">
+                    <i class="fas fa-heart" aria-hidden="true"></i>
+                    <span class="badge flex-center">6</span>
+                  </li>
+                  <li class="wrapper_badge">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"> </i>
+                    <span class="badge flex-center">6</span>
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
+
           <!-- code snippet  -->
           <div class="comp_snippet">
             <script type="text/plain" class="line-numbers language-markup">
+              <!-- Navigation -->
 
-              <!-- Avatar -->
-
-              <span class="avatar av-xl">
-                <img src="..." alt="..." class="rd" />
-              </span>
-              <span class="avatar av-lg">
-                <img src="..." alt="..." class="sq" />
-              </span>
-              <span class="avatar av-md">
-                <img src="..." alt="..." class="rd" />
-              </span>
+              <nav class="h3 wrapper_nav flex">
+                <div class="nav_brand_text">Brand text</div>
+                <div>Middle Item</div>
+                <div>
+                  <ul class="flex nav_icons list-none">
+                    <li>option 1</li>
+                    <li>option 2</li>
+                    <li>option 3</li>
+                  </ul>
+                </div>
+              </nav>
             </script>
           </div>
         </section>
       </main>
     </div>
     <script src="../../utils/prism/prism.js"></script>
-    <script src="../../app.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>

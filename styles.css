@@ -42,7 +42,7 @@ main {
   align-items: center;
   padding: 0 5rem;
   background-color: #303030;
-  color: #eee;
+  color: var(--bg-color);
 }
 .nav_icon {
   transition: all 0.2s ease-in-out;
@@ -86,7 +86,6 @@ main {
   font-size: 1.4rem;
   list-style-type: none;
   flex-direction: column;
-
   margin: 1rem;
   padding: 0;
 }

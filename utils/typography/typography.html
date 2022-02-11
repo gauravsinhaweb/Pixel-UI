@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../core.css" />
     <link rel="stylesheet" href="../../utils/prism/prism.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixel / Avatar</title>
+    <title>Pixel / Input</title>
   </head>
   <body>
     <!-- Documentation wrapper  -->
@@ -19,6 +19,7 @@
           <a href="../../index.html">
             <span title="pixel-ui" class="h2 nav_brand_text"> PIXEL</span></a
           >
+
           <!-- <span>
             <img src="./assets/splash.svg" alt="logo" class="nav_brand" />
           </span> -->
@@ -109,7 +110,7 @@
           <li class="aside_head">getting started</li>
           <li class="component">installation</li>
           <a href="/utils/typography/typography.html"
-            ><li class="component">Text utilities</li></a
+            ><li class="component comp_active">Text utilities</li></a
           >
 
           <li class="h5 aside_head">components</li>
@@ -117,7 +118,7 @@
             ><li class="component">Alert</li></a
           >
           <a href="/components/avatar/avatar.html"
-            ><li class="component comp_active">Avatar</li></a
+            ><li class="component">Avatar</li></a
           >
           <a href="/components/badge/badge.html"
             ><li class="component">badge</li></a
@@ -156,63 +157,112 @@
       </aside>
 
       <!-- Main  -->
-
+      <!-- Alert component  -->
       <main>
-        <!-- Avatar component  -->
-
         <section class="comp_wrapper">
-          <h1 class="comp_head-text">avatar</h1>
+          <h1 class="comp_head-text">Typography</h1>
+
+          <!-- heading  -->
+
+          <h2 class="comp_head-text h3">heading</h2>
           <p class="comp_desc-text p-lg">
-            The avatar component has 5 sizes,
-            <span class="comp_desc_highlight"> avatar-xl</span>,
-            <span class="comp_desc_highlight"> avatar-lg</span>,
-            <span class="comp_desc_highlight">avatar-md</span>,
-            <span class="comp_desc_highlight">avatar-sm</span>,
-            <span class="comp_desc_highlight">avatar-xs</span>, having
-            <span class="comp_desc_highlight">rd</span>,for round avatar,
-            <span class="comp_desc_highlight">sq</span>,for square avatar,
+            <span class="comp_desc_highlight">.h1</span>,
+            <span class="comp_desc_highlight">.h2</span>,
+            <span class="comp_desc_highlight">.h3</span>,
+            <span class="comp_desc_highlight">.h4</span>,
           </p>
-          <h2 class="comp_head-text h3">standard avatars</h2>
-          <div class="wrapper_comp_box p-lg">
-            <div class="wrapper_av flex">
-              <span class="avatar av-xl">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
-              </span>
-              <span class="avatar av-lg">
-                <img src="../../assets/av.png" alt="avatar" class="sq" />
-              </span>
-              <span class="avatar av-md">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
-              </span>
-              <span class="avatar av-sm">
-                <img src="../../assets/av.png" alt="avatar" />
-              </span>
-              <span class="avatar av-xs">
-                <img src="../../assets/av.png" alt="avatar" />
-              </span>
-            </div>
+          <div class="wrapper_comp_box wrapper_typography flex">
+            <h1>This is heading 1.</h1>
+            <h2>This is heading 2.</h2>
+            <h3>This is heading 3.</h3>
+            <h4>This is heading 4.</h4>
           </div>
-          <!-- code snippet  -->
+
           <div class="comp_snippet">
             <script type="text/plain" class="line-numbers language-markup">
 
-              <!-- Avatar -->
+              <!-- typography - headings  -->
 
-              <span class="avatar av-xl">
-                <img src="..." alt="..." class="rd" />
-              </span>
-              <span class="avatar av-lg">
-                <img src="..." alt="..." class="sq" />
-              </span>
-              <span class="avatar av-md">
-                <img src="..." alt="..." class="rd" />
-              </span>
+              <h1>This is heading 1</h1>
+              <h2>This is heading 2</h2>
+              <h3>This is heading 3</h3>
+              <h4>This is heading 4</h4>
+            </script>
+          </div>
+          <!-- paragraph  -->
+
+          <h2 class="comp_head-text h3">paragraph - gray text</h2>
+          <p class="comp_desc-text p-lg">
+            <span class="comp_desc_highlight">.p</span>,
+            <span class="comp_desc_highlight">.p-lg</span>,
+            <span class="comp_desc_highlight">.p-sm</span>,
+          </p>
+          <div class="wrapper_comp_box wrapper_typography flex">
+            <p class="p-lg">This is paragraph large. (p-lg)</p>
+            <p class="p">This is paragraph. (p)</p>
+            <p class="p-sm">This is paragraph small. (p-sm)</p>
+          </div>
+
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- typography - paragraph  -->
+
+              <p class="p-lg">This is paragraph large.</p>
+              <p class="p">This is paragraph.</p>
+              <p class="p-sm">This is paragraph small.</p>
+            </script>
+          </div>
+
+          <!-- text-center  -->
+
+          <h2 class="comp_head-text h3">text center</h2>
+          <p class="comp_desc-text p-lg">
+            <span class="comp_desc_highlight">.text-center</span>,
+          </p>
+          <div class="wrapper_comp_box wrapper_typography flex">
+            <p class="text-center">This is a paragraph in center.</p>
+          </div>
+
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- typography - text-center  -->
+
+
+              <p class="text-center">This is a paragraph in center.</p>
+            </script>
+          </div>
+
+          <!-- text style  -->
+
+          <h2 class="comp_head-text h3">text styles</h2>
+          <p class="comp_desc-text p-lg">
+            Text styles are, text line through
+            <span class="comp_desc_highlight">.text_line_th</span> , text
+            uppercase <span class="comp_desc_highlight">.text_uc</span> , and
+            text capitalize <span class="comp_desc_highlight">.text_cl</span>
+          </p>
+          <div class="wrapper_comp_box wrapper_typography flex">
+            <p class="text_line_th">This is a line through text.</p>
+            <p class="text_uc">This is a uppercase text.</p>
+            <p class="text_cl">This is a capitalize text.</p>
+          </div>
+
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- typography - text styles  -->
+
+              <p class="text_line_th">This is a line through text.</p>
+              <p class="text_uc">This is a uppercase text.</p>
+              <p class="text_cl">This is a capitalize text.</p>
             </script>
           </div>
         </section>
       </main>
     </div>
     <script src="../../utils/prism/prism.js"></script>
-    <script src="../../app.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../core.css" />
     <link rel="stylesheet" href="../../utils/prism/prism.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixel / Avatar</title>
+    <title>Pixel / Grid</title>
   </head>
   <body>
     <!-- Documentation wrapper  -->
@@ -117,7 +117,7 @@
             ><li class="component">Alert</li></a
           >
           <a href="/components/avatar/avatar.html"
-            ><li class="component comp_active">Avatar</li></a
+            ><li class="component">Avatar</li></a
           >
           <a href="/components/badge/badge.html"
             ><li class="component">badge</li></a
@@ -150,7 +150,7 @@
             ><li class="component">Snackbar</li></a
           >
           <a href="/components/grid/grid.html"
-            ><li class="component">grid</li></a
+            ><li class="component comp_active">grid</li></a
           >
         </ul>
       </aside>
@@ -158,55 +158,57 @@
       <!-- Main  -->
 
       <main>
-        <!-- Avatar component  -->
+        <!-- grid component  -->
+
+        <!-- grid  -->
 
         <section class="comp_wrapper">
-          <h1 class="comp_head-text">avatar</h1>
-          <p class="comp_desc-text p-lg">
-            The avatar component has 5 sizes,
-            <span class="comp_desc_highlight"> avatar-xl</span>,
-            <span class="comp_desc_highlight"> avatar-lg</span>,
-            <span class="comp_desc_highlight">avatar-md</span>,
-            <span class="comp_desc_highlight">avatar-sm</span>,
-            <span class="comp_desc_highlight">avatar-xs</span>, having
-            <span class="comp_desc_highlight">rd</span>,for round avatar,
-            <span class="comp_desc_highlight">sq</span>,for square avatar,
-          </p>
-          <h2 class="comp_head-text h3">standard avatars</h2>
-          <div class="wrapper_comp_box p-lg">
-            <div class="wrapper_av flex">
-              <span class="avatar av-xl">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
-              </span>
-              <span class="avatar av-lg">
-                <img src="../../assets/av.png" alt="avatar" class="sq" />
-              </span>
-              <span class="avatar av-md">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
-              </span>
-              <span class="avatar av-sm">
-                <img src="../../assets/av.png" alt="avatar" />
-              </span>
-              <span class="avatar av-xs">
-                <img src="../../assets/av.png" alt="avatar" />
-              </span>
+          <h1 class="comp_head-text">grid</h1>
+
+          <div class="wrapper_comp_box">
+            <div class="grid grid-5050">
+              <div class="content-one">
+                <img src="https://picsum.photos/400/200" alt="img" />
+              </div>
+              <div class="content-two flex-center">
+                <h1>grid-5050.</h1>
+              </div>
             </div>
           </div>
+          <div class="wrapper_comp_box">
+            <div class="grid grid-3070">
+              <div class="content-one flex-center">
+                <h1>grid-3070.</h1>
+              </div>
+              <div class="content-two">
+                <img src="https://picsum.photos/400/200" alt="img" />
+              </div>
+            </div>
+          </div>
+          <div class="wrapper_comp_box">
+            <div class="grid grid-7030">
+              <div class="content-one">
+                <img src="https://picsum.photos/400/200" alt="img" />
+              </div>
+              <div class="content-two flex-center">
+                <h1>grid-7030.</h1>
+              </div>
+            </div>
+          </div>
+
           <!-- code snippet  -->
           <div class="comp_snippet">
             <script type="text/plain" class="line-numbers language-markup">
+              <!-- Grid -->
 
-              <!-- Avatar -->
-
-              <span class="avatar av-xl">
-                <img src="..." alt="..." class="rd" />
-              </span>
-              <span class="avatar av-lg">
-                <img src="..." alt="..." class="sq" />
-              </span>
-              <span class="avatar av-md">
-                <img src="..." alt="..." class="rd" />
-              </span>
+              <div class="grid grid-5050">
+                <div class="content-one">
+                  <img src="..." alt="..." />
+                </div>
+                <div class="content-two flex-center">
+                  <h1>grid-5050.</h1>
+                </div>
+              </div>
             </script>
           </div>
         </section>

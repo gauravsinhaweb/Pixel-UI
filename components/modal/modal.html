@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../core.css" />
     <link rel="stylesheet" href="../../utils/prism/prism.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixel / Avatar</title>
+    <title>Pixel / Modal</title>
   </head>
   <body>
     <!-- Documentation wrapper  -->
@@ -19,6 +19,7 @@
           <a href="../../index.html">
             <span title="pixel-ui" class="h2 nav_brand_text"> PIXEL</span></a
           >
+
           <!-- <span>
             <img src="./assets/splash.svg" alt="logo" class="nav_brand" />
           </span> -->
@@ -117,7 +118,7 @@
             ><li class="component">Alert</li></a
           >
           <a href="/components/avatar/avatar.html"
-            ><li class="component comp_active">Avatar</li></a
+            ><li class="component">Avatar</li></a
           >
           <a href="/components/badge/badge.html"
             ><li class="component">badge</li></a
@@ -138,7 +139,7 @@
             ><li class="component">List</li></a
           >
           <a href="/components/modal/modal.html"
-            ><li class="component">Modal</li></a
+            ><li class="component comp_active">Modal</li></a
           >
           <a href="/components/navigation/navigation.html"
             ><li class="component">Navigation</li></a
@@ -156,63 +157,88 @@
       </aside>
 
       <!-- Main  -->
-
       <main>
-        <!-- Avatar component  -->
+        <!-- Modal  -->
 
         <section class="comp_wrapper">
-          <h1 class="comp_head-text">avatar</h1>
+          <h1 class="comp_head-text">Modal</h1>
           <p class="comp_desc-text p-lg">
-            The avatar component has 5 sizes,
-            <span class="comp_desc_highlight"> avatar-xl</span>,
-            <span class="comp_desc_highlight"> avatar-lg</span>,
-            <span class="comp_desc_highlight">avatar-md</span>,
-            <span class="comp_desc_highlight">avatar-sm</span>,
-            <span class="comp_desc_highlight">avatar-xs</span>, having
-            <span class="comp_desc_highlight">rd</span>,for round avatar,
-            <span class="comp_desc_highlight">sq</span>,for square avatar,
+            Modals are used to show some important information to the user and
+            they are closed only when the user selects some option.
           </p>
-          <h2 class="comp_head-text h3">standard avatars</h2>
-          <div class="wrapper_comp_box p-lg">
-            <div class="wrapper_av flex">
-              <span class="avatar av-xl">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
-              </span>
-              <span class="avatar av-lg">
-                <img src="../../assets/av.png" alt="avatar" class="sq" />
-              </span>
-              <span class="avatar av-md">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
-              </span>
-              <span class="avatar av-sm">
-                <img src="../../assets/av.png" alt="avatar" />
-              </span>
-              <span class="avatar av-xs">
-                <img src="../../assets/av.png" alt="avatar" />
-              </span>
+
+          <div class="wrapper_comp_box flex-center">
+            <div>
+              <button id="open-modal" class="btn btn-primary">
+                Open modal
+              </button>
+
+              <!-- modal box -->
+
+              <div id="modal" class="modal">
+                <div class="card card-content modal_box">
+                  <div class="flex modal_title">
+                    <div class="title">Modal</div>
+                    <button class="btn_modal">
+                      <i
+                        id="close-modal"
+                        class="fa fa-times"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </div>
+                  <hr />
+
+                  <div class="content">
+                    Ex ad et excepteur ad qui adipisicing velit excepteur ea.
+                    Eiusmod .Laboris voluptate ad in nostrud dolore do commodo.
+                    Eiusmod aliqua dolore aliqua laboris voluptate excepteur
+                  </div>
+                  <div class="footer btn_wrapper_cwd flex">
+                    <button class="btn btn-cta">action 1</button>
+                    <button class="btn out-cta">action 2</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
           <!-- code snippet  -->
           <div class="comp_snippet">
             <script type="text/plain" class="line-numbers language-markup">
 
-              <!-- Avatar -->
+              <!-- Modal  -->
 
-              <span class="avatar av-xl">
-                <img src="..." alt="..." class="rd" />
-              </span>
-              <span class="avatar av-lg">
-                <img src="..." alt="..." class="sq" />
-              </span>
-              <span class="avatar av-md">
-                <img src="..." alt="..." class="rd" />
-              </span>
+              <div  class="modal">
+                <div class="card card-content modal_box">
+                  <div class="flex modal_title">
+                    <div class="title">Modal</div>
+                    <button class="btn_modal">
+                      <i
+                        class="fa fa-times"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </div>
+
+                  <div class="content">
+                    Ex ad et excepteur ad qui adipisicing velit excepteur ea.
+                    Eiusmod .Laboris voluptate ad in nostrud dolore do commodo.
+                    Eiusmod aliqua dolore aliqua laboris voluptate excepteur
+                  </div>
+                  <div class="footer btn_wrapper_cwd flex">
+                      <button class="btn btn-cta">action 1</button>
+                      <button class="btn out-cta">action 2</button>
+                  </div>
+                </div>
+              </div>
             </script>
           </div>
         </section>
       </main>
     </div>
+    <script src="/components/modal/modal.js"></script>
     <script src="../../utils/prism/prism.js"></script>
-    <script src="../../app.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>

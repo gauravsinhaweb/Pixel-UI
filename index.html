@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/pixel.png" />
 
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./core.css" />
     <link rel="stylesheet" href="./utils/prism/prism.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <title>Pixel / Documentation</title>
   </head>
   <body>
@@ -103,11 +110,12 @@
       <!-- Sidebar  -->
       <aside>
         <ul class="wrapper_aside flex">
-          <li class="h5 aside_head">getting started</li>
-          <li class="component comp_active">usage</li>
+          <li class="aside_head">getting started</li>
           <li class="component">installation</li>
-
-          <li class="h5 aside_head">components</li>
+          <a href="./utils/typography/typography.html"
+            ><li class="component">Text utilities</li></a
+          >
+          <li class="aside_head">components</li>
           <a href="./components/alert/alert.html"
             ><li class="component">Alert</li></a
           >
@@ -128,6 +136,24 @@
           >
           <a href="./components/input/input.html"
             ><li class="component">input</li></a
+          >
+          <a href="./components/list/list.html"
+            ><li class="component">List</li></a
+          >
+          <a href="./components/modal/modal.html"
+            ><li class="component">Modal</li></a
+          >
+          <a href="./components/navigation/navigation.html"
+            ><li class="component">Navigation</li></a
+          >
+          <a href="./components/rating/rating.html"
+            ><li class="component">Rating</li></a
+          >
+          <a href="./components/snackbar/snackbar.html"
+            ><li class="component">Snackbar</li></a
+          >
+          <a href="./components/grid/grid.html"
+            ><li class="component">grid</li></a
           >
         </ul>
       </aside>
@@ -281,29 +307,11 @@
                 ></div>
               </span>
 
-              <span class="avatar av-sm">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  aria-hidden="true"
-                  role="img"
-                  class="iconify iconify--ic bell"
-                  width="32"
-                  height="32"
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 22c1.1 0 2-.9 2-2h-4a2 2 0 0 0 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-                <div
-                  title="Square Idle badge"
-                  class="av_badge_sm bell_badge flex-center"
-                >
-                  6
-                </div>
+              <span class="">
+                <span class="wrapper_badge">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"> </i>
+                  <span class="badge badge_text flex-center">6</span>
+                </span>
               </span>
             </div>
           </div>
@@ -346,7 +354,7 @@
           <h2 class="comp_head-text h3">solid Buttons</h2>
           <p class="comp_desc_text p-lg">
             The Solid button is contained with filled colors inside, has five
-            variants,
+            variants
 
             <span class="comp_desc_highlight">btn-primary</span>,
             <span class="comp_desc_highlight">btn-cta</span>,
@@ -390,7 +398,7 @@
               <button class="btn out-cta">button</button>
               <button class="btn out-danger">danger</button>
               <button class="btn out-success">success</button>
-              <button class="btn out-info">click me</button>
+              <button class="btn out-info btn-dismiss">Dismiss</button>
             </div>
           </div>
 
@@ -403,6 +411,43 @@
               <button class="btn out-cta">button</button>
               <button class="btn out-danger">danger</button>
               <button class="btn out-success">success</button>
+            </script>
+          </div>
+          <!-- floating action, icon button  -->
+
+          <h2 class="comp_head-text h3">icon and floating action Button</h2>
+          <p class="comp_desc_text p-lg">
+            The floating action button
+            <span class="comp_desc_highlight">fa-btn</span>
+            and button with an icon
+            <span class="comp_desc_highlight">btn-icon</span>,
+          </p>
+          <div class="wrapper_comp_box p-lg">
+            <div class="wrapper_av flex">
+              <button class="btn fa-btn">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+              </button>
+
+              <button class="btn btn-cta">
+                Login
+                <i class="fa btn-icon fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- icon and floating action button-->
+
+              <button class="btn fa-btn">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+              </button>
+
+              <button class="btn btn-cta">
+                Sign Up
+                <i class="fa btn-icon fa-arrow-right" aria-hidden="true"></i>
+              </button>
             </script>
           </div>
         </section>
@@ -877,7 +922,7 @@
           </p>
           <div class="wrapper_comp_box flex-center">
             <div class="img_res">
-              <img src="https://picsum.photos/400/200" alt="image" />
+              <img src="https://picsum.photos/800/300" alt="image" />
             </div>
           </div>
 
@@ -987,6 +1032,283 @@
               <!-- Input error  -->
 
               <input class="inp_lg inp_err" type="text" />
+            </script>
+          </div>
+        </section>
+
+        <!-- text utilities/typography -->
+
+        <section class="comp_wrapper">
+          <h1 class="comp_head-text">Typography</h1>
+
+          <!-- heading  -->
+
+          <h2 class="comp_head-text h3">heading</h2>
+          <p class="comp_desc-text p-lg">
+            <span class="comp_desc_highlight">.h1</span>,
+            <span class="comp_desc_highlight">.h2</span>,
+            <span class="comp_desc_highlight">.h3</span>,
+            <span class="comp_desc_highlight">.h4</span>,
+          </p>
+          <div class="wrapper_comp_box wrapper_typography flex">
+            <h1>This is heading 1.</h1>
+            <h2>This is heading 2.</h2>
+            <h3>This is heading 3.</h3>
+            <h4>This is heading 4.</h4>
+          </div>
+
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- typography - headings  -->
+
+              <h1>This is heading 1</h1>
+              <h2>This is heading 2</h2>
+              <h3>This is heading 3</h3>
+              <h4>This is heading 4</h4>
+            </script>
+          </div>
+          <!-- paragraph  -->
+
+          <h2 class="comp_head-text h3">paragraph - gray text</h2>
+          <p class="comp_desc-text p-lg">
+            <span class="comp_desc_highlight">.p</span>,
+            <span class="comp_desc_highlight">.p-lg</span>,
+            <span class="comp_desc_highlight">.p-sm</span>,
+          </p>
+          <div class="wrapper_comp_box wrapper_typography flex">
+            <p class="p-lg">This is paragraph large. (p-lg)</p>
+            <p class="p">This is paragraph. (p)</p>
+            <p class="p-sm">This is paragraph small. (p-sm)</p>
+          </div>
+
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- typography - paragraph  -->
+
+              <p class="p-lg">This is paragraph large.</p>
+              <p class="p">This is paragraph.</p>
+              <p class="p-sm">This is paragraph small.</p>
+            </script>
+          </div>
+
+          <!-- text-center  -->
+
+          <h2 class="comp_head-text h3">text center</h2>
+          <p class="comp_desc-text p-lg">
+            <span class="comp_desc_highlight">.text-center</span>,
+          </p>
+          <div class="wrapper_comp_box wrapper_typography flex">
+            <p class="text-center">This is a paragraph in center.</p>
+          </div>
+
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- typography - text-center  -->
+
+
+              <p class="text-center">This is a paragraph in center.</p>
+            </script>
+          </div>
+
+          <!-- text style  -->
+
+          <h2 class="comp_head-text h3">text styles</h2>
+          <p class="comp_desc-text p-lg">
+            Text styles are, text line through
+            <span class="comp_desc_highlight">.text_line_th</span> , text
+            uppercase <span class="comp_desc_highlight">.text_uc</span> , and
+            text capitalize <span class="comp_desc_highlight">.text_cl</span>
+          </p>
+          <div class="wrapper_comp_box wrapper_typography flex">
+            <p class="text_line_th">This is a line through text.</p>
+            <p class="text_uc">This is a uppercase text.</p>
+            <p class="text_cl">This is a capitalize text.</p>
+          </div>
+
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- typography - text styles  -->
+
+              <p class="text_line_th">This is a line through text.</p>
+              <p class="text_uc">This is a uppercase text.</p>
+              <p class="text_cl">This is a capitalize text.</p>
+            </script>
+          </div>
+        </section>
+
+        <!-- Modal  -->
+
+        <section class="comp_wrapper">
+          <h1 class="comp_head-text">Modal</h1>
+          <p class="comp_desc-text p-lg">
+            Modals are used to show some important information to the user and
+            they are closed only when the user selects some option.
+          </p>
+
+          <div class="wrapper_comp_box flex-center">
+            <div>
+              <button id="open-modal" class="btn btn-primary">
+                Open modal
+              </button>
+
+              <!-- modal box -->
+
+              <div id="modal" class="modal">
+                <div class="card card-content modal_box">
+                  <div class="flex modal_title">
+                    <div class="title">Modal</div>
+                    <button class="btn_modal">
+                      <i
+                        id="close-modal"
+                        class="fa fa-times"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </div>
+                  <hr />
+
+                  <div class="content">
+                    Ex ad et excepteur ad qui adipisicing velit excepteur ea.
+                    Eiusmod .Laboris voluptate ad in nostrud dolore do commodo.
+                    Eiusmod aliqua dolore aliqua laboris voluptate excepteur
+                  </div>
+                  <div class="footer btn_wrapper_cwd flex">
+                    <button class="btn btn-cta">action 1</button>
+                    <button class="btn out-cta">action 2</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- code snippet  -->
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+
+              <!-- Modal  -->
+
+              <div  class="modal">
+                <div class="card card-content modal_box">
+                  <div class="flex modal_title">
+                    <div class="title">Modal</div>
+                    <button class="btn_modal">
+                      <i
+                        class="fa fa-times"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </div>
+
+                  <div class="content">
+                    Ex ad et excepteur ad qui adipisicing velit excepteur ea.
+                    Eiusmod .Laboris voluptate ad in nostrud dolore do commodo.
+                    Eiusmod aliqua dolore aliqua laboris voluptate excepteur
+                  </div>
+                  <div class="footer btn_wrapper_cwd flex">
+                      <button class="btn btn-cta">action 1</button>
+                      <button class="btn out-cta">action 2</button>
+                  </div>
+                </div>
+              </div>
+            </script>
+          </div>
+          <script src="./components/modal/modal.js"></script>
+        </section>
+
+        <!-- List -->
+
+        <section class="comp_wrapper">
+          <h1 class="comp_head-text">List</h1>
+
+          <h2 class="comp_head-text h3">List style</h2>
+
+          <div class="wrapper_comp_box flex p-lg text_uc">
+            <!--  List -->
+            <ul>
+              <li>Item-1</li>
+              <li>Item-2</li>
+              <li>Item-3</li>
+            </ul>
+            <ul class="list-circle">
+              <li>Item-1</li>
+              <li>Item-2</li>
+              <li>Item-3</li>
+            </ul>
+            <ul class="list-square">
+              <li>Item-1</li>
+              <li>Item-2</li>
+              <li>Item-3</li>
+            </ul>
+            <ul class="list-none">
+              <li>Item-1</li>
+              <li>Item-2</li>
+              <li>Item-3</li>
+            </ul>
+          </div>
+
+          <!-- code snippet  -->
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+              <!--  List -->
+              <ul>
+                <li>Item-1</li>
+                <li>Item-2</li>
+                <li>Item-3</li>
+              </ul>
+              <ul class="list-circle">
+                <li>Item-1</li>
+                <li>Item-2</li>
+                <li>Item-3</li>
+              </ul>
+              <ul class="list-square">
+                <li>Item-1</li>
+                <li>Item-2</li>
+                <li>Item-3</li>
+              </ul>
+              <ul class="list-none">
+                <li>Item-1</li>
+                <li>Item-2</li>
+                <li>Item-3</li>
+              </ul>
+            </script>
+          </div>
+
+          <h2 class="comp_head-text h3">List Category</h2>
+
+          <div class="wrapper_comp_box flex-center p-lg">
+            <!--  List -->
+            <ul class="list-item p-lg list-none">
+              <div class="catagory h4 text_cl">categories-</div>
+
+              <li>Clothing</li>
+              <li>Electronics</li>
+              <li>Kitchen</li>
+              <li>Music</li>
+              <li>Posters</li>
+              <li>Scuba gear</li>
+              <li>Sweatshirts</li>
+            </ul>
+          </div>
+
+          <!-- code snippet  -->
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+              <!-- Category List -->
+              <ul class="list-item p-lg list-none">
+                <div class="catagory h4 text_cl">categories-</div>
+
+                <li>Clothing</li>
+                <li>Electronics</li>
+                <li>Kitchen</li>
+                <li>Music</li>
+                <li>Posters</li>
+                <li>Scuba gear</li>
+                <li>Sweatshirts</li>
+              </ul>
             </script>
           </div>
         </section>

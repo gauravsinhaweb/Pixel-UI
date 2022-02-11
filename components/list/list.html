@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../core.css" />
     <link rel="stylesheet" href="../../utils/prism/prism.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixel / Avatar</title>
+    <title>Pixel / List</title>
   </head>
   <body>
     <!-- Documentation wrapper  -->
@@ -19,6 +19,7 @@
           <a href="../../index.html">
             <span title="pixel-ui" class="h2 nav_brand_text"> PIXEL</span></a
           >
+
           <!-- <span>
             <img src="./assets/splash.svg" alt="logo" class="nav_brand" />
           </span> -->
@@ -117,7 +118,7 @@
             ><li class="component">Alert</li></a
           >
           <a href="/components/avatar/avatar.html"
-            ><li class="component comp_active">Avatar</li></a
+            ><li class="component">Avatar</li></a
           >
           <a href="/components/badge/badge.html"
             ><li class="component">badge</li></a
@@ -135,7 +136,7 @@
             ><li class="component">input</li></a
           >
           <a href="/components/list/list.html"
-            ><li class="component">List</li></a
+            ><li class="component comp_active">List</li></a
           >
           <a href="/components/modal/modal.html"
             ><li class="component">Modal</li></a
@@ -156,63 +157,103 @@
       </aside>
 
       <!-- Main  -->
-
       <main>
-        <!-- Avatar component  -->
+        <!-- List -->
 
         <section class="comp_wrapper">
-          <h1 class="comp_head-text">avatar</h1>
-          <p class="comp_desc-text p-lg">
-            The avatar component has 5 sizes,
-            <span class="comp_desc_highlight"> avatar-xl</span>,
-            <span class="comp_desc_highlight"> avatar-lg</span>,
-            <span class="comp_desc_highlight">avatar-md</span>,
-            <span class="comp_desc_highlight">avatar-sm</span>,
-            <span class="comp_desc_highlight">avatar-xs</span>, having
-            <span class="comp_desc_highlight">rd</span>,for round avatar,
-            <span class="comp_desc_highlight">sq</span>,for square avatar,
-          </p>
-          <h2 class="comp_head-text h3">standard avatars</h2>
-          <div class="wrapper_comp_box p-lg">
-            <div class="wrapper_av flex">
-              <span class="avatar av-xl">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
-              </span>
-              <span class="avatar av-lg">
-                <img src="../../assets/av.png" alt="avatar" class="sq" />
-              </span>
-              <span class="avatar av-md">
-                <img src="../../assets/av.png" alt="avatar" class="rd" />
-              </span>
-              <span class="avatar av-sm">
-                <img src="../../assets/av.png" alt="avatar" />
-              </span>
-              <span class="avatar av-xs">
-                <img src="../../assets/av.png" alt="avatar" />
-              </span>
-            </div>
+          <h1 class="comp_head-text">List</h1>
+
+          <h2 class="comp_head-text h3">List style</h2>
+
+          <div class="wrapper_comp_box flex p-lg text_uc">
+            <!--  List -->
+            <ul>
+              <li>Item-1</li>
+              <li>Item-2</li>
+              <li>Item-3</li>
+            </ul>
+            <ul class="list-circle">
+              <li>Item-1</li>
+              <li>Item-2</li>
+              <li>Item-3</li>
+            </ul>
+            <ul class="list-square">
+              <li>Item-1</li>
+              <li>Item-2</li>
+              <li>Item-3</li>
+            </ul>
+            <ul class="list-none">
+              <li>Item-1</li>
+              <li>Item-2</li>
+              <li>Item-3</li>
+            </ul>
           </div>
+
           <!-- code snippet  -->
           <div class="comp_snippet">
             <script type="text/plain" class="line-numbers language-markup">
+              <!--  List -->
+              <ul>
+                <li>Item-1</li>
+                <li>Item-2</li>
+                <li>Item-3</li>
+              </ul>
+              <ul class="list-circle">
+                <li>Item-1</li>
+                <li>Item-2</li>
+                <li>Item-3</li>
+              </ul>
+              <ul class="list-square">
+                <li>Item-1</li>
+                <li>Item-2</li>
+                <li>Item-3</li>
+              </ul>
+              <ul class="list-none">
+                <li>Item-1</li>
+                <li>Item-2</li>
+                <li>Item-3</li>
+              </ul>
+            </script>
+          </div>
 
-              <!-- Avatar -->
+          <h2 class="comp_head-text h3">List Category</h2>
 
-              <span class="avatar av-xl">
-                <img src="..." alt="..." class="rd" />
-              </span>
-              <span class="avatar av-lg">
-                <img src="..." alt="..." class="sq" />
-              </span>
-              <span class="avatar av-md">
-                <img src="..." alt="..." class="rd" />
-              </span>
+          <div class="wrapper_comp_box flex-center p-lg">
+            <!--  List -->
+            <ul class="list-item p-lg list-none">
+              <div class="catagory h4 text_cl">categories-</div>
+
+              <li>Clothing</li>
+              <li>Electronics</li>
+              <li>Kitchen</li>
+              <li>Music</li>
+              <li>Posters</li>
+              <li>Scuba gear</li>
+              <li>Sweatshirts</li>
+            </ul>
+          </div>
+
+          <!-- code snippet  -->
+          <div class="comp_snippet">
+            <script type="text/plain" class="line-numbers language-markup">
+              <!-- Category List -->
+              <ul class="list-item p-lg list-none">
+                <div class="catagory h4 text_cl">categories-</div>
+
+                <li>Clothing</li>
+                <li>Electronics</li>
+                <li>Kitchen</li>
+                <li>Music</li>
+                <li>Posters</li>
+                <li>Scuba gear</li>
+                <li>Sweatshirts</li>
+              </ul>
             </script>
           </div>
         </section>
       </main>
     </div>
     <script src="../../utils/prism/prism.js"></script>
-    <script src="../../app.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>

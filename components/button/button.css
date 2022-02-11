@@ -112,3 +112,18 @@
   box-shadow: 0 5px 5px -3px #0003 inset, 0 8px 10px 1px #00000024 inset,
     0 3px 14px 2px #0000001f inset;
 }
+
+.fa-btn {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: fit-content;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+}
+.btn-icon {
+  font-size: 1rem;
+  padding: 0 1rem;
+
+  width: fit-content;
+}
