@@ -1,0 +1,107 @@
+.snackbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+.snackbar button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.snackbar_wrapper {
+  display: none;
+  width: 35rem;
+  height: 4rem;
+  background-color: var(--cta);
+  -webkit-box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%),
+    0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+    0 1px 18px 0 rgb(0 0 0 / 12%);
+  border-radius: 4px;
+  color: var(--bg-color);
+  justify-content: space-around;
+  font-size: 1.4rem;
+  font-weight: 400;
+  align-items: center;
+}
+.sb-leading,
+.sb-baseline {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+.sb-baseline {
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.sb-stacked {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.sb-text {
+  min-width: 20rem;
+}
+.sb-btn {
+  background-color: transparent;
+  color: var(--bg-color);
+  font-size: 1.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sb-retry {
+  color: var(--primary);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  box-shadow: none;
+  outline: none;
+}
+
+.sb-retry:focus {
+  background-color: var(--primary-li);
+  box-shadow: none;
+}
+.sb-btn-wrapper {
+  justify-content: space-between;
+  align-items: center;
+}
+.sb-leading {
+  width: 28rem;
+  left: 1rem;
+  padding: 0 1rem;
+}
+.sb-stacked {
+  padding: 1rem;
+  flex-direction: column;
+  height: auto;
+}
+.sb-stacked-btn {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  padding: 0.5rem;
+  align-items: center;
+}
+.cross_baseline,
+.cross_leading,
+.cross_stacked {
+  color: var(--secondary);
+  transition: all 0.2s ease-in-out;
+  font-weight: 100;
+}
+.cross_baseline:hover,
+.cross_leading:hover,
+.cross_stacked :hover {
+  color: var(--secondary-li);
+}

@@ -1415,8 +1415,72 @@
             </script>
           </div>
         </section>
+
+        <!-- snackbar  -->
+
+        <section class="comp_wrapper">
+          <h1 class="comp_head-text">Toast/Notify/Snackbar</h1>
+          <p class="p-lg">
+            Rating components can be used as read-only badge or in reviews
+            section. Can be used in reviews section as form too.
+          </p>
+          <div class="wrapper_comp_box">
+            <div class="btn_wrapper snackbar_btn flex-center">
+              <button class="btn btn-primary">baseline</button>
+              <button class="btn btn-primary">leading</button>
+              <button class="btn btn-primary">stacked</button>
+            </div>
+          </div>
+          <div class="snackbar">
+            <div class="snackbar_wrapper sb-baseline">
+              <div class="sb-text">Can't send photo. Retry in 5 seconds.</div>
+              <div class="flex sb-btn-wrapper">
+                <button class="sb-retry">Retry</button>
+                <button class="sb-btn cross_baseline">x</button>
+              </div>
+            </div>
+
+            <div class="snackbar_wrapper sb-leading">
+              <div class="sb-text">Your photo has been archived.</div>
+              <div><button class="sb-retry">undo</button></div>
+              <div><button class="sb-btn cross_leading">x</button></div>
+            </div>
+
+            <div class="snackbar_wrapper sb-stacked">
+              <div>
+                <div class="sb-text">
+                  This item already has the label "travel". You can add a new
+                  label.
+                </div>
+              </div>
+              <div class="sb-stacked-btn">
+                <div><button class="sb-retry">add a new label</button></div>
+                <div><button class="sb-btn cross_stacked">x</button></div>
+              </div>
+            </div>
+          </div>
+          <!-- code snippet  -->
+          <div class="comp_snippet">
+            <script
+              type="text/plain"
+              class="line-numbers language-markup"
+              language-code="html"
+            >
+              <!-- snackbar - leading-->
+
+              <div class="snackbar_wrapper sb-leading">
+                <div class="sb-text">Your photo has been archived.</div>
+                <div><button class="sb-retry">undo</button></div>
+                <div><button class="sb-btn cross_leading">x</button></div>
+              </div>
+            </script>
+          </div>
+        </section>
+
       </main>
     </div>
+    <script src="/components/rating/rating.js"></script>
+    <script src="/components/snackbar/snackbar.js"></script>
     <script src="./utils/prism/prism.js"></script>
     <script src="/app.js"></script>
   </body>
