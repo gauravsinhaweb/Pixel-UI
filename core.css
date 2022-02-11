@@ -55,6 +55,26 @@ html {
   text-transform: capitalize;
   padding: 2rem 0;
 }
+nav {
+  background-color: var(--white);
+  grid-area: nav;
+  top: 0;
+  position: sticky;
+  z-index: 999;
+  will-change: transform;
+  transition: transform 800ms cubic-bezier(0.5, 0.41, 0.29, 0.9);
+}
+.wrapper_nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  background-color: #303030;
+  color: var(--bg-color);
+}
+.nav_icon {
+  transition: all 0.2s ease-in-out;
+  opacity: 0.8;
+}
 .wrapper_comp_box {
   color: var(--black);
   padding: 1.6rem;
