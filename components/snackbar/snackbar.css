@@ -27,19 +27,18 @@
   font-weight: 400;
   align-items: center;
 }
-
+.sb-leading,
 .sb-baseline {
-  position: absolute;
-  bottom: 5px;
-  right: 0;
-  left: 0;
-  margin: auto;
-}
-.sb-leading {
   position: absolute;
   bottom: 5px;
   left: 5px;
 }
+.sb-baseline {
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
 .sb-stacked {
   position: absolute;
   bottom: 5px;
@@ -94,7 +93,15 @@
   padding: 0.5rem;
   align-items: center;
 }
-
-.cross:hover {
-  background-color: var(--bg-dark);
+.cross_baseline,
+.cross_leading,
+.cross_stacked {
+  color: var(--secondary);
+  transition: all 0.2s ease-in-out;
+  font-weight: 100;
+}
+.cross_baseline:hover,
+.cross_leading:hover,
+.cross_stacked :hover {
+  color: var(--secondary-li);
 }

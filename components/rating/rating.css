@@ -1,0 +1,7 @@
+.star {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+}
+.star span {
+  cursor: pointer;
+}

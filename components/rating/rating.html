@@ -18,6 +18,10 @@
           <a href="../../index.html">
             <span title="pixel-ui" class="h2 nav_brand_text"> PIXEL</span></a
           >
+
+          <!-- <span>
+            <img src="./assets/splash.svg" alt="logo" class="nav_brand" />
+          </span> -->
         </h1>
 
         <div class="wrapper_nav_menu">
@@ -104,13 +108,13 @@
         <ul class="wrapper_aside flex">
           <li class="aside_head">getting started</li>
           <li class="component">installation</li>
-          <a href="/utils/typography/typography.html"
+          <a href="/components/typography/typography.html"
             ><li class="component">Text utilities</li></a
           >
 
           <li class="h5 aside_head">components</li>
           <a href="/components/alert/alert.html"
-            ><li class="component">Alert</li></a
+            ><li class="component comp_active">Alert</li></a
           >
           <a href="/components/avatar/avatar.html"
             ><li class="component">Avatar</li></a
@@ -143,7 +147,7 @@
             ><li class="component">Rating</li></a
           >
           <a href="/components/snackbar/snackbar.html"
-            ><li class="component comp_active">Snackbar</li></a
+            ><li class="component">Snackbar</li></a
           >
           <a href="/components/grid/grid.html"
             ><li class="component">grid</li></a
@@ -154,92 +158,59 @@
       <!-- Main  -->
       <!-- Alert component  -->
       <main>
-        <!-- snackbar  -->
+            <!-- Rating -->
 
-        <section class="comp_wrapper">
-          <h1 class="comp_head-text">Toast/Notify/Snackbar</h1>
-          <p class="p-lg">
-            Rating components can be used as read-only badge or in reviews
-            section. Can be used in reviews section as form too.
-          </p>
-          <div class="wrapper_comp_box">
-            <div class="btn_wrapper snackbar_btn flex-center">
-              <button class="btn btn-primary">baseline</button>
-              <button class="btn btn-primary">leading</button>
-              <button class="btn btn-primary">stacked</button>
-            </div>
-          </div>
-          <div class="snackbar">
-            <div class="snackbar_wrapper sb-baseline">
-              <div class="sb-text">Can't send photo. Retry in 5 seconds.</div>
-              <div class="flex sb-btn-wrapper">
-                <button class="sb-retry">Retry</button>
-                <button class="sb-btn cross_baseline">
-                  <i
-                    id="close-modal"
-                    class="fa fa-times"
-                    aria-hidden="true"
-                  ></i>
-                </button>
-              </div>
-            </div>
-
-            <div class="snackbar_wrapper sb-leading">
-              <div class="sb-text">Your photo has been archived.</div>
-              <div><button class="sb-retry">undo</button></div>
-              <div>
-                <button class="sb-btn cross_leading">
-                  <i
-                    id="close-modal"
-                    class="fa fa-times"
-                    aria-hidden="true"
-                  ></i>
-                </button>
-              </div>
-            </div>
-
-            <div class="snackbar_wrapper sb-stacked">
-              <div>
-                <div class="sb-text">
-                  This item already has the label "travel". You can add a new
-                  label.
+            <section class="comp_wrapper">
+              <h1 class="comp_head-text">rating</h1>
+              <p class="p-lg">
+                Rating components can be used as read-only badge or in reviews
+                section. Can be used in reviews section as form too.
+              </p>
+              <div class="wrapper_comp_box flex-center">
+                <div class="star">
+                  <span>
+                    <i class="fa fa-star" aria-hidden="true" id="rating-star-1"></i
+                  ></span>
+                  <span>
+                    <i class="fa fa-star" aria-hidden="true" id="rating-star-2"></i
+                  ></span>
+                  <span>
+                    <i class="fa fa-star" aria-hidden="true" id="rating-star-3"></i
+                  ></span>
+                  <span>
+                    <i class="fa fa-star" aria-hidden="true" id="rating-star-4"></i
+                  ></span>
+                  <span>
+                    <i class="fa fa-star" aria-hidden="true" id="rating-star-5"></i
+                  ></span>
                 </div>
               </div>
-              <div class="sb-stacked-btn">
-                <div><button class="sb-retry">add a new label</button></div>
-                <div>
-                  <button class="sb-btn cross_stacked">
-                    <i
-                      id="close-modal"
-                      class="fa fa-times"
-                      aria-hidden="true"
-                    ></i>
-                  </button>
-                </div>
+    
+              <!-- code snippet  -->
+              <div class="comp_snippet">
+                <script type="text/plain" class="line-numbers language-markup">
+                  <!-- Rating-->
+    
+                  <nav class="h3 wrapper_nav flex">
+                    <div class="nav_brand_text">Brand text</div>
+                    <div>Middle Item</div>
+                    <div>
+                      <ul class="flex nav_icons list-none">
+                        <li>option 1</li>
+                        <li>option 2</li>
+                        <li>option 3</li>
+                      </ul>
+                    </div>
+                  </nav>
+                </script>
               </div>
-            </div>
-          </div>
-          <!-- code snippet  -->
-          <div class="comp_snippet">
-            <script
-              type="text/plain"
-              class="line-numbers language-markup"
-              language-code="html"
-            >
-              <!-- snackbar - leading-->
-
-              <div class="snackbar_wrapper sb-leading">
-                <div class="sb-text">Your photo has been archived.</div>
-                <div><button class="sb-retry">undo</button></div>
-                <div><button class="sb-btn cross_leading">x</button></div>
-              </div>
-            </script>
-          </div>
+            </section>
         </section>
       </main>
-    </div>
-    <script src="/components/snackbar/snackbar.js"></script>
+    </div>             
+     <script src="/components/rating/rating.js"></script>
     <script src="../../utils/prism/prism.js"></script>
     <script src="/app.js"></script>
+
   </body>
 </html>
