@@ -12,9 +12,9 @@ A pixel perfect component library for your website.
 
 Import pixel-ui in your project:
 
-`
+```html
 https://pixeldesign.netlify.app/pixel-design.css
- `
+```
 
 ***or***
 
