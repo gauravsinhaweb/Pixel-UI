@@ -11,3 +11,11 @@ window.onscroll = function () {
 
   prevScrollpos = currentScrollPos;
 };
+
+const toggle = false;
+const hamburger = document.querySelector("#hamburger");
+const aside = document.querySelector("#aside");
+
+hamburger.addEventListener("click", function () {
+  aside.style.transform = "translateX(0%)";
+});
