@@ -5,6 +5,9 @@
   right: 0;
   z-index: 99999;
 }
+.comp_head-text {
+  word-break: break-word;
+}
 .snackbar button {
   background-color: transparent;
   border: none;
@@ -104,4 +107,9 @@
 .cross_leading:hover,
 .cross_stacked :hover {
   color: var(--secondary-li);
+}
+@media screen and (max-width: 30rem) {
+  .snackbar_btn > .btn {
+    font-size: 1rem;
+  }
 }

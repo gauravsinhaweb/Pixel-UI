@@ -3,6 +3,8 @@
 
 html {
   --star: #f6c800;
+  --btn-yellow: #ff9f00;
+  --btn-orange: #f08804;
 
   --white: #fff;
   --black: #000;
@@ -83,15 +85,13 @@ nav {
   word-wrap: break-word;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   background-color: var(--bg-color);
+  overflow: hidden;
 }
 .comp_desc {
   color: var(--text-primary);
   padding: 1rem;
   font-size: 1.6rem;
 }
-/* .comp_desc_text {
-  margin: 1rem;
-} */
 .comp_desc_highlight {
   background-color: var(--primary-li);
   border-radius: 4px;
@@ -140,9 +140,6 @@ nav {
   color: var(--bg-dark-text);
   text-transform: capitalize;
 }
-.fa {
-  font-size: 2rem;
-}
 .wrapper_typography {
   flex-direction: column;
 }
@@ -174,9 +171,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
   text-decoration: none;
   cursor: pointer !important;
 }
-/* .toolbar {
-  position: sticky !important;
-} */
+
 .copy-to-clipboard-button,
 .toolbar,
 .toolbar-item {
@@ -193,7 +188,5 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
   -moz-user-select: none;
   -ms-user-select: none;
 }
-/* @media screen and (max-width: 768px) {
-
-
-} */
+@media screen and (max-width: 20rem) {
+}
