@@ -41,14 +41,16 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 0 5rem;
-  background-color: #303030;
+  background-color: var(--cta);
   color: var(--bg-color);
 }
-.nav_icon {
+.nav_menu {
   transition: all 0.2s ease-in-out;
   opacity: 0.8;
 }
-
+.nav_icon {
+  font-size: 2.4rem;
+}
 .twitter:hover {
   color: #5865f2;
   opacity: 1;
@@ -61,20 +63,17 @@ main {
   color: #ffff00;
   opacity: 1;
 }
-/* .nav_brand {
-  height: 30px;
-  width: 30px;
-} */
+
 .nav_brand_text {
   text-transform: uppercase;
   cursor: pointer;
   font-family: "Shadows Into Light", cursive;
-  font-weight: 600 !important;
+  font-weight: 600;
 }
 .nav_brand_text:hover {
   color: var(--white);
 }
-.nav_menu li {
+.nav_menu > li {
   list-style: none;
   padding: 2rem;
   text-transform: capitalize;
@@ -135,5 +134,10 @@ a {
   }
   aside {
     position: static;
+  }
+}
+@media screen and (max-width: 20rem) {
+  .nav_icon {
+    font-size: 2rem;
   }
 }
