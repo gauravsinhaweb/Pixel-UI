@@ -31,7 +31,6 @@ aside {
   position: sticky;
   align-self: start;
   transition: top 800ms cubic-bezier(0.5, 0.41, 0.29, 0.9);
-  overflow: hidden;
 }
 main {
   background-color: var(--white);
