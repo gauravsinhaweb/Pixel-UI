@@ -86,7 +86,7 @@ main {
   flex-direction: column;
   margin: 1rem;
   padding: 0;
-  max-height: 80vh;
+  max-height: 82vh;
   overflow: auto;
 }
 .wrapper_aside::-webkit-scrollbar {

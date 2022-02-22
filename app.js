@@ -34,6 +34,19 @@ let On = false;
 let mediaQuery = window.matchMedia("(max-width: 20rem)");
 themeBtn.addEventListener("click", function () {
   On = !On;
+  On
+    ? (theme.innerHTML = `  
+  <li id="hamburger" class="p">
+  <div>
+    <i class="fas fa-sun nav_icon theme"></i>
+  </div>
+</li>`)
+    : (theme.innerHTML = `  
+<li id="hamburger" class="p">
+<div>  
+   <i class="fa fa-moon nav_icon theme"></i>
+</div>
+</li>`);
   if (On) {
     !mediaQuery.matches
       ? (container.style.overflow = "auto")
@@ -47,7 +60,7 @@ themeBtn.addEventListener("click", function () {
     document.querySelector("main").style.color = "var(--secondary-li)";
   } else if (!On) {
     document.querySelector(".container").style.backgroundColor = "inherit";
-    document.querySelector("aside").style.backgroundColor = "inherit";
+    document.querySelector("aside").style.backgroundColor = "var(--white)";
     document.querySelector("main").style.backgroundColor = "inherit";
     document.querySelector(".container").style.color = "inherit";
     document.querySelector("aside").style.color = "inherit";
