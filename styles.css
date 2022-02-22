@@ -86,7 +86,13 @@ main {
   flex-direction: column;
   margin: 1rem;
   padding: 0;
+  max-height: 80vh;
+  overflow: auto;
 }
+.wrapper_aside::-webkit-scrollbar {
+  width: 5px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -152,4 +158,26 @@ div > .hamburger {
   #navbar {
     display: none;
   }
+}
+
+/* scrollbar  */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
