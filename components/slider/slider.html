@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../core.css" />
     <link rel="stylesheet" href="../../utils/prism/prism.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixel / List</title>
+    <title>Pixel / Slider</title>
   </head>
   <body>
     <!-- Documentation wrapper  -->
@@ -61,7 +61,7 @@
         </div>
       </nav>
 
-      <!-- Sidebar  -->
+      <!-- slider  -->
       <aside id="aside">
         <ul class="wrapper_aside flex">
           <li class="aside_head">getting started</li>
@@ -93,7 +93,7 @@
             ><li class="component">input</li></a
           >
           <a href="/components/list/list.html"
-            ><li class="component comp_active">List</li></a
+            ><li class="component">List</li></a
           >
           <a href="/components/modal/modal.html"
             ><li class="component">Modal</li></a
@@ -101,8 +101,8 @@
           <a href="/components/navigation/navigation.html"
             ><li class="component">Navigation</li></a
           >
-          <a href="/components/rating/rating.html"
-            ><li class="component">Rating</li></a
+          <a href="/components/slider/slider.html"
+            ><li class="component comp_active">Slider</li></a
           >
           <a href="/components/snackbar/snackbar.html"
             ><li class="component">Snackbar</li></a
@@ -111,103 +111,47 @@
             ><li class="component">grid</li></a
           >
           <a href="/components/slider/slider.html"
-            ><li class="component">Slider</li></a
+            ><li class="component comp_active">Slider</li></a
           >
         </ul>
       </aside>
 
       <!-- Main  -->
       <main>
-        <!-- List -->
+        <!-- slider -->
+
+        <!-- slider -->
 
         <section class="comp_wrapper">
-          <h1 class="comp_head-text">List</h1>
-
-          <h2 class="comp_head-text h3">List style</h2>
-
-          <div class="wrapper_comp_box wrapper_list flex p-lg text_uc">
-            <!--  List -->
-            <ul>
-              <li>Item-1</li>
-              <li>Item-2</li>
-              <li>Item-3</li>
-            </ul>
-            <ul class="list-circle">
-              <li>Item-1</li>
-              <li>Item-2</li>
-              <li>Item-3</li>
-            </ul>
-            <ul class="list-square">
-              <li>Item-1</li>
-              <li>Item-2</li>
-              <li>Item-3</li>
-            </ul>
-            <ul class="list-none">
-              <li>Item-1</li>
-              <li>Item-2</li>
-              <li>Item-3</li>
-            </ul>
+          <h1 class="comp_head-text">slider</h1>
+          <p class="p-lg">
+            Allows users to make selections from a range of values.
+          </p>
+          <div class="wrapper_comp_box flex-center">
+            <label for="range"></label>
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider-pixel"
+              id="range"
+            />
           </div>
-
           <!-- code snippet  -->
           <div class="comp_snippet">
             <script type="text/plain" class="line-numbers language-markup">
-              <!--  List -->
-              <ul>
-                <li>Item-1</li>
-                <li>Item-2</li>
-                <li>Item-3</li>
-              </ul>
-              <ul class="list-circle">
-                <li>Item-1</li>
-                <li>Item-2</li>
-                <li>Item-3</li>
-              </ul>
-              <ul class="list-square">
-                <li>Item-1</li>
-                <li>Item-2</li>
-                <li>Item-3</li>
-              </ul>
-              <ul class="list-none">
-                <li>Item-1</li>
-                <li>Item-2</li>
-                <li>Item-3</li>
-              </ul>
-            </script>
-          </div>
+              <!-- slider-->
 
-          <h2 class="comp_head-text h3">List Category</h2>
-
-          <div class="wrapper_comp_box flex-center p-lg">
-            <!--  List -->
-            <ul class="list-item p-lg list-none">
-              <div class="catagory h4 text_cl">categories-</div>
-
-              <li>Clothing</li>
-              <li>Electronics</li>
-              <li>Kitchen</li>
-              <li>Music</li>
-              <li>Posters</li>
-              <li>Scuba gear</li>
-              <li>Sweatshirts</li>
-            </ul>
-          </div>
-
-          <!-- code snippet  -->
-          <div class="comp_snippet">
-            <script type="text/plain" class="line-numbers language-markup">
-              <!-- Category List -->
-              <ul class="list-item p-lg list-none">
-                <div class="catagory h4 text_cl">categories-</div>
-
-                <li>Clothing</li>
-                <li>Electronics</li>
-                <li>Kitchen</li>
-                <li>Music</li>
-                <li>Posters</li>
-                <li>Scuba gear</li>
-                <li>Sweatshirts</li>
-              </ul>
+              <label for="range"></label>
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="50"
+                class="slider-pixel"
+                id="range"
+              />
             </script>
           </div>
         </section>
