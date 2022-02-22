@@ -4,7 +4,7 @@
 A pixel perfect component library for your website.
 
 
-![pixel-ui](https://user-images.githubusercontent.com/75125943/155205813-7b35fbf5-b511-447b-bad8-f6dc53d26a49.mp4)
+https://user-images.githubusercontent.com/75125943/155205813-7b35fbf5-b511-447b-bad8-f6dc53d26a49.mp4
 
 
 
