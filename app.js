@@ -11,11 +11,21 @@ window.onscroll = function () {
 
   prevScrollpos = currentScrollPos;
 };
+let hamburgerToggle = false;
 const hamburger = document.querySelector("#hamburger");
 const aside = document.querySelector("#aside");
+const wrapperAside = document.querySelector(".wrapper_aside");
+const body = document.querySelector("body");
 
 hamburger.addEventListener("click", function () {
-  aside.style.transform = "translateX(0%)";
+  hamburgerToggle = !hamburgerToggle;
+  if (hamburgerToggle) {
+    aside.style.transform = "translateX(0%)";
+    wrapperAside.style.alignItems = "center";
+    body.style.overflow = "hidden";
+  } else {
+    aside.style.transform = "translateX(-100%)";
+  }
 });
 
 const themeBtn = document.querySelector("#theme");
