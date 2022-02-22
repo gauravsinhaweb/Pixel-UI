@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="../../core.css" />
     <link rel="stylesheet" href="../../utils/prism/prism.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixel / Rating</title>
+    <title>Pixel / Slider</title>
   </head>
   <body>
     <!-- Documentation wrapper  -->
     <div class="container dark_theme">
       <!-- Navbar  -->
 
+      <!-- Navbar  -->
       <nav id="navbar" class="wrapper_nav flex">
         <h1>
           <a href="/index.html">
@@ -46,7 +47,7 @@
                 </div>
               </a>
             </li>
-            <li class="p">
+            <li id="theme" class="p">
               <div>
                 <i class="fa fa-moon nav_icon theme"></i>
               </div>
@@ -60,7 +61,7 @@
         </div>
       </nav>
 
-      <!-- Sidebar  -->
+      <!-- slider  -->
       <aside id="aside">
         <ul class="wrapper_aside flex">
           <li class="aside_head">getting started</li>
@@ -100,8 +101,8 @@
           <a href="/components/navigation/navigation.html"
             ><li class="component">Navigation</li></a
           >
-          <a href="/components/rating/rating.html"
-            ><li class="component comp_active">Rating</li></a
+          <a href="/components/slider/slider.html"
+            ><li class="component comp_active">Slider</li></a
           >
           <a href="/components/snackbar/snackbar.html"
             ><li class="component">Snackbar</li></a
@@ -114,56 +115,45 @@
 
       <!-- Main  -->
       <main>
-        <!-- Rating -->
+        <!-- slider -->
+
+        <!-- slider -->
 
         <section class="comp_wrapper">
-          <h1 class="comp_head-text">rating</h1>
+          <h1 class="comp_head-text">slider</h1>
           <p class="p-lg">
-            Rating components can be used as read-only badge or in reviews
-            section. Can be used in reviews section as form too.
+            Allows users to make selections from a range of values.
           </p>
           <div class="wrapper_comp_box flex-center">
-            <div class="star">
-              <span>
-                <i class="fa fa-star" aria-hidden="true" id="rating-star-1"></i
-              ></span>
-              <span>
-                <i class="fa fa-star" aria-hidden="true" id="rating-star-2"></i
-              ></span>
-              <span>
-                <i class="fa fa-star" aria-hidden="true" id="rating-star-3"></i
-              ></span>
-              <span>
-                <i class="fa fa-star" aria-hidden="true" id="rating-star-4"></i
-              ></span>
-              <span>
-                <i class="fa fa-star" aria-hidden="true" id="rating-star-5"></i
-              ></span>
-            </div>
+            <label for="range"></label>
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider-pixel"
+              id="range"
+            />
           </div>
-
           <!-- code snippet  -->
           <div class="comp_snippet">
             <script type="text/plain" class="line-numbers language-markup">
-              <!-- Rating-->
+              <!-- slider-->
 
-              <nav class="h3 wrapper_nav flex">
-                <div class="nav_brand_text">Brand text</div>
-                <div>Middle Item</div>
-                <div>
-                  <ul class="flex nav_icons list-none">
-                    <li>option 1</li>
-                    <li>option 2</li>
-                    <li>option 3</li>
-                  </ul>
-                </div>
-              </nav>
+              <label for="range"></label>
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="50"
+                class="slider-pixel"
+                id="range"
+              />
             </script>
           </div>
         </section>
       </main>
     </div>
-    <script src="/components/rating/rating.js"></script>
     <script src="../../utils/prism/prism.js"></script>
     <script src="/app.js"></script>
   </body>
