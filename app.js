@@ -29,10 +29,16 @@ hamburger.addEventListener("click", function () {
 });
 
 const themeBtn = document.querySelector("#theme");
+const container = document.querySelector(".container");
 let On = false;
+let mediaQuery = window.matchMedia("(max-width: 20rem)");
 themeBtn.addEventListener("click", function () {
   On = !On;
   if (On) {
+    !mediaQuery.matches
+      ? (container.style.overflow = "auto")
+      : (container.style.overflow = "inherit");
+
     document.querySelector(".container").style.backgroundColor = "var(--cta)";
     document.querySelector("aside").style.backgroundColor = "var(--cta)";
     document.querySelector("main").style.backgroundColor = "var(--cta)";
