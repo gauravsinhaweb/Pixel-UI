@@ -188,5 +188,11 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
   -moz-user-select: none;
   -ms-user-select: none;
 }
-@media screen and (max-width: 20rem) {
+div > .hamburger {
+  display: none;
+}
+@media screen and (max-width: 60rem) {
+  div > .hamburger {
+    display: block;
+  }
 }
